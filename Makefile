@@ -1,7 +1,7 @@
 # dummy
 CARD?=level4_7boardrounds.pdf
 
-all:
+all: systemnotes.pdf systemnotes-book.pdf
 
 clean:
 	rm -f *.aux *.log systemnotes.pdf blank.pdf systemnotes-book.pdf temp* log card.pdf
