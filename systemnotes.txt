@@ -1,215 +1,469 @@
 System notes on Pascal's Encrypted Club
 
 A brief history:
+================
 
-We wanted to play a system making use of encrypted bidding.  Our first attempt used a fairly standard Acol structure, with a weak NT and three weak 2s.  It was soon apparent that crypto raises in these circumstances (requiring 11+, 4-card support and either A or K but not both) never come up, at least to a first approximation.
+We wanted to play a system making use of encrypted bidding.  Our first attempt
+used a fairly standard Acol structure, with a weak NT and three weak 2s.  It
+was soon apparent that crypto raises in these circumstances (requiring 11+,
+4-card support and either A or K but not both) never come up, at least to a
+first approximation.
 
-We also quite liked the idea of light and limited openings.  This was from a couple of experiments with a (highly illegal) forcing pass system, where a pass in first or second seat showed any 12+, with 0-11 HCP hands forced to open somehow.  In particular, 2-suited bids at the 1-level have a lot of attractions.
+We also quite liked the idea of light and limited openings.  This was from a
+couple of experiments with a (highly illegal) forcing pass system, where a pass
+in first or second seat showed any 12+, with 0-11 HCP hands forced to open
+somehow.  In particular, 2-suited bids at the 1-level have a lot of
+attractions.
 
-Our next attempt was to consider the idea of a 12+ 1C opener, with all other openings 8-11.  This is fine in theory, but EBU regulations say that this 1C opener cannot have a 5+ card major suit without a longer minor.  This meant that we needed an opening-values 2C bid, and generally lost the point of the system.  We fell back upon a strong club structure.
+Our next attempt was to consider the idea of a 12+ 1C opener, with all other
+openings 8-11.  This is fine in theory, but EBU regulations say that this 1C
+opener cannot have a 5+ card major suit without a longer minor.  This meant
+that we needed an opening-values 2C bid, and generally lost the point of the
+system.  We fell back upon a strong club structure.
 
-Given the strong C structure, we then looked at our other opening bids.  Our 2-level openers are pre-emptive, and show either single-suiters or two-suiters.  This is based upon the Suction convention: 2C shows D or both majors, 2D shows H or S&C, 2H shows S or C&D, and 2S shows H and a minor.  We don't have a way to show a S&D two-suiter; this is a likely future use for 2NT.
+Given the strong C structure, we then looked at our other opening bids.  Our
+2-level openers are pre-emptive, and show either single-suiters or two-suiters.
+This is based upon the Suction convention: 2C shows D or both majors, 2D shows
+H or S&C, 2H shows S or C&D, and 2S shows H and a minor.  We don't have a way
+to show a S&D two-suiter; this is a likely future use for 2NT.
 
-Major suit openings are played as takeout bids.  This means that 1S promises 5+ H and 0-3 S, with 1H promising 5+ S and 0-3 H.  These were, at one stage, 4-card openings in the other major, but we found that this made bidding in competition too difficult.  In uncontested auctions, this has the great advantage that you gain a "free" cue-bid: after a 1S opening, 2S shows a good raise of H while 2H, 3H etc. are pre-emptive.
+Major suit openings are played as takeout bids.  This means that 1S promises 5+
+H and 0-3 S, with 1H promising 5+ S and 0-3 H.  These were, at one stage,
+4-card openings in the other major, but we found that this made bidding in
+competition too difficult.  In uncontested auctions, this has the great
+advantage that you gain a "free" cue-bid: after a 1S opening, 2S shows a good
+raise of H while 2H, 3H etc. are pre-emptive.
 
-The next implication is that we need a way to show hands with 4+ in both majors.  This falls to 1NT; we have 2C/2D/2H/2S as weak bids "to play", and 2NT as a strong enquiry.  Bids in the major suits are primarily pre-emptive; 2NT asks for range and better major.  3m is strong and one-round forcing.
+The next implication is that we need a way to show hands with 4+ in both
+majors.  This falls to 1NT; we have 2C/2D/2H/2S as weak bids "to play", and 2NT
+as a strong enquiry.  Bids in the major suits are primarily pre-emptive; 2NT
+asks for range and better major.  3m is strong and one-round forcing.
 
-1C includes balanced hands 16-19 and 23+ (we're using 2NT as a 20-22 balanced hand, for now).  The 1D opening, therefore, has to cover all opening hands that do not fall into one of the above categories.  It therefore includes:
+1C includes balanced hands 16-19 and 23+ (we're using 2NT as a 20-22 balanced
+hand, for now).  The 1D opening, therefore, has to cover all opening hands that
+do not fall into one of the above categories.  It therefore includes:
     - 12-15 balanced.
-    - Unbalanced hands, 8-15, with no 5-card major and at most one 4-card major.
+    - Unbalanced hands, 8-15, with no 5-card major and at most one 4-card
+      major.
 
-Responses to 1D are selected to allow the 1NT rebid, showing a weak NT opener, on all auctions.  Therefore: 1H = 0-7, 1S = 8+.  After interference, pass is weak; any other action promises 8+.
+Responses to 1D are selected to allow the 1NT rebid, showing a weak NT opener,
+on all auctions.  Therefore: 1H = 0-7, 1S = 8+.  After interference, pass is
+weak; any other action promises 8+.
 
-So that's our one-level openings.  For two-level openers, we wanted them to be the two-suited bids we'd originally considered for our one-level openings.  I can't remember if it was Matt or me who first found out about Suction as a defence to 1NT, or who suggested it as a structure for 2-level openings, but the fact remains that we like it.  Essentially, each 2-level bid shows either a weak 2 in the suit above OR the other two suits.  Of course, this leaves the non-touching pairs uncovered, and leaves you with two ways to show a pre-empt in clubs.  We soon thought of playing 2S as showing H and a minor (as opposed to the original C or H&D).  This still left S&D uncovered, but we decided to cope.
+So that's our one-level openings.  For two-level openers, we wanted them to be
+the two-suited bids we'd originally considered for our one-level openings.  I
+can't remember if it was Matt or me who first found out about Suction as a
+defence to 1NT, or who suggested it as a structure for 2-level openings, but
+the fact remains that we like it.  Essentially, each 2-level bid shows either a
+weak 2 in the suit above OR the other two suits.  Of course, this leaves the
+non-touching pairs uncovered, and leaves you with two ways to show a pre-empt
+in clubs.  We soon thought of playing 2S as showing H and a minor (as opposed
+to the original C or H&D).  This still left S&D uncovered, but we decided to
+cope.
 
-At this stage, our 2NT opening was fairly standard: 20-22 balanced or semi-balanced.  After a few sessions playing, we modified this to include the spade-diamond two-suiters.  Of course, that makes the bid forcing, so we changed the NT ranges such that this included our game-forcing NT hands: any 23+.  Responses are suit preference, on the assumption that the weak hand is more frequent, with transfer preference being used if responder has a strong hand.  If opener has the strong option, he can rebid 3NT.
+At this stage, our 2NT opening was fairly standard: 20-22 balanced or
+semi-balanced.  After a few sessions playing, we modified this to include the
+spade-diamond two-suiters.  Of course, that makes the bid forcing, so we
+changed the NT ranges such that this included our game-forcing NT hands: any
+23+.  Responses are suit preference, on the assumption that the weak hand is
+more frequent, with transfer preference being used if responder has a strong
+hand.  If opener has the strong option, he can rebid 3NT.
 
-The next change (there's still more!) was to include GF two-suiters in our 2-level openings.  This narrows the specification of the 1C opening, and is easy to specify: opener can rebid his opened suit (whichever it is) over any response.  In the 2NT case, this opening now shows GF (semi-)balanced, GF with S&D, or weak with S&D.  In the two-suited case, any rebid other than 3NT shows the strong hand, and any transfer break does also.
+The next change (there's still more!) was to include GF two-suiters in our
+2-level openings.  This narrows the specification of the 1C opening, and is
+easy to specify: opener can rebid his opened suit (whichever it is) over any
+response.  In the 2NT case, this opening now shows GF (semi-)balanced, GF with
+S&D, or weak with S&D.  In the two-suited case, any rebid other than 3NT shows
+the strong hand, and any transfer break does also.
 
-Finally, our responses to 1C: initially, these were natural, promising a 4-card suit and 8+ (with any weak hands going via 1D).  Boring!  We then tried encrypted responses: 1H promised HA or HK, not both; 1S showed neither or both in H, and exactly one in S, and so on.  1NT was a positive with no potential key; 1D was the negative.  Opener would rebid NT if balanced, 2H to deny a potential key, and anything else to show a potential place to play if holding the key K or denying if holding the key A.  We ditched this structure not because it doesn't work but because it frequently (read nearly always) ends up at the 3-level before either hand has actually mentioned a suit, which could still be only 4 cards.
+Finally, our responses to 1C: initially, these were natural, promising a 4-card
+suit and 8+ (with any weak hands going via 1D).  Boring!  We then tried
+encrypted responses: 1H promised HA or HK, not both; 1S showed neither or both
+in H, and exactly one in S, and so on.  1NT was a positive with no potential
+key; 1D was the negative.  Opener would rebid NT if balanced, 2H to deny a
+potential key, and anything else to show a potential place to play if holding
+the key K or denying if holding the key A.  We ditched this structure not
+because it doesn't work but because it frequently (read nearly always) ends up
+at the 3-level before either hand has actually mentioned a suit, which could
+still be only 4 cards.
 
-We now play a far more elegant structure, similar to our responses to 1D: 1D is negative (0-7), 1H is positive distributional (8+), and 1S is positive balanced (8+, again).
+We now play a far more elegant structure, similar to our responses to 1D: 1D is
+negative (0-7), 1H is positive distributional (8+), and 1S is positive balanced
+(8+, again).
 
-As for the system name: suction is measured in Pascals, and the system is encrypted.  It went from there.
+As for the system name: suction is measured in Pascals, and the system is
+encrypted.  It went from there.
+
+System description
+==================
+
+Philosophy:
+-----------
+
+   - establish strength first
+   - establish shape (balanced/unbalanced) second
+   - then find a contract
+   - single-suited hands are all 6+ cards and deny a side 4-card suit.
+
+Openings:
+---------
+
+1C  - 12-15 balanced or 10-15 unbalanced, no five-card major and at most one 
+      four-card major.
+1D  - 16+; excludes balanced hands 24+ and game-forcing two-suited hands.
+1H  - 10-15 unbalanced, with 4+ spades and additional constraints: first or
+      second seat non-vulnerable, possible canape with hearts, but 5+ spades if
+      not holding 4+ hearts. Other positions, or vulnerable, 5+ spades and 0-3
+      hearts.
+1S  - 10-15 unbalanced, 5+ hearts, and 0-3 spades.
+1NT - 9-11 balanced in first or second non-vulnerable; otherwise 10-15
+      unbalanced with 4+ in both majors.
+
+2C  - weak with D, single suited OR weak with H&S, 4-4 or better OR GF with H&S.
+2D  - weak with H, single suited OR weak with S&C, 5+/4+ or better OR GF with S&C.
+2H  - weak with S, single suited OR weak with C&D, 4+/4+ OR GF with C&D.
+2S  - weak with H and a minor OR GF with H and a minor. 4+/4+.
+2NT - weak with D&S, 4+/4+, OR 24+ balanced OR GF with D&S.
+
+3-level: natural in suits; 3NT gambling.
+Higher-level openings: mostly natural excepting 4NT: specific ace-asking.
+
+Responses & rebids
+------------------
+
+1C:
+   1D = 0-7, no 6-card suit
+   1H = 8-15 any
+   1S = 15+ any, game-forcing.
+      - major suit bids promise exactly 4; either 4-4-4-1 with singleton other
+         major or has a longer minor (as there's no other hand shape that fits the
+         opening and has exactly one 4-card major)
+      - 1NT rebid = 12-15 balanced; see "Continuations after 1NT".
+      - minor suit bids deny a 4-card major.
+   2x = 6+ card suit, 0-7. Non-forcing.
+      - Opener will pass unless holding something exciting in context.
+         Principle: find a fit and find a level. No close games at matchpoints.
+
+1D:
+   1H = 0-7, no 6-card suit.
+   1S = 8+, game-forcing.
+      - 1NT rebid = 16-19 balanced; see "Continuations after 1NT".
+      - Simple suit rebids are suction-style, showing either the suit above
+         (single-suited) or the other two (C-> D or majors; D-> H or (S&minor); H->
+         S or minors; S->C or (H&minor). Could be 3-suited, short in the suit
+         above. These are shown (2C-2D-3C: short D. 2D-2H-2S: short H. 2H-2S-3H:
+         short S. 2S-3C-3S: short C.).
+            o Responder will bid the next suit (relay). Opener then rebids NT with the
+               single-suited hand, or a suit with the two-suited option.
+      - Jump suit rebids are GF, single-suited.
+      - 2NT rebid = 20-23 balanced; see "Continuations after 2NT".
+   2x = 6+ card suit, 0-7. Non-forcing.
+      - Opener will pass unless holding something exciting in context.
+
+1H (if denying H):
+   1S/2S/3S/4S = to play/limit raises/to play.
+   1NT = 1-round force.
+   2C/D = natural, forcing.
+   2H = GF+ raise, neither or both of S AK.
+   2NT = good raise, with exactly one of S AK.
+      - Next bid shows 0/1 loser and the S K, or 2/3 losers and the SA.
+         Rebidding S denies the other top honour.
+   3C/3D = fit jump.
+   3H = GF raise, two of AKQ.
+   4C/D/H = splinter agreeing spades
+
+1S:
+   2H/3H/4H = to play/limit raise/to play.
+   1NT = 1-round force.
+   2C/D = natural, forcing.
+   2S = GF+ raise, neither or both of H AK.
+   2NT = good raise, with exactly one of H AK.
+      - Next bid shows 0/1 loser and the H K, or 2/3 losers and the HA.
+         Rebidding H denies the other top honour.
+   3C/3D = fit jump.
+   3S = GF raise, two of AKQ.
+   4C/D/S = splinter agreeing hearts
+
+1H if not denying H:
+   1S = forcing enquiry.
+      - 1NT = both majors. Continuations as after artificial 1NT opening.
+   1NT = non-forcing.
+   2C/D = natural, forcing.
+   2H = GF+ raise, neither or both of S AK.
+   2S/3S/4S = limit raises/to play.
+   2NT = good raise, with exactly one of S AK.
+      - Next bid shows 0/1 loser and the S K, or 2/3 losers and the SA.
+         Rebidding S denies the other top honour.
+   3C/3D = fit jump.
+   3H = GF raise, two of AKQ.
+   4C/D/H = splinter agreeing spades
+
+1NT if artificial:
+   2C/D: weak, to play.
+   2H/S: preference, to play.
+   2NT: forcing enquiry:
+      - 3C/D strong, 3H/S weak. 3C/H better H, 3D/S better S.
+   3C/D: strong, good suit.
+   3H/S: good raise, with exactly one of AK.
+
+2C:
+   2D = pass/correct.
+      - 2NT = GF opening.
+   2H = forcing; major-focused.
+      - 2S = better S
+      - 2NT = both equal
+      - 3D = weak, diamonds.
+      - 3C = GF opening
+      - 3H = better H
+   2NT = forcing, how good are your diamonds?
+      - 3C = GF opening
+      - 3D = bad diamonds
+      - 3H = 2-suited
+      - 3S = decent diamonds
+      - 3NT = top-of-range diamonds
+2D:
+   2H = pass/correct.
+      - 2NT = GF opening.
+   2S = forcing, C/S-focused.
+      - 2NT = both equal.
+      - 3C = better C.
+      - 3D = GF opening.
+      - 3H = better S, minimum.
+      - 3S = better S, maximum.
+   2NT = forcing, how good are your hearts?
+      - 3C = two-suited.
+      - 3D = GF opening.
+      - 3H = dire, single-suited.
+      - 3S = decent, single-suited.
+      - 3NT = top-of-range hearts.
+2H:
+   2S = pass/correct.
+      - 2NT = GF opening.
+   3C = forcing, C/D-focused.
+      - 3D = better D.
+      - 3H = GF opening.
+      - 3S = single-suited.
+      - 3NT = both equal.
+      - 4C = better C.
+   2NT = forcing, how good are your spades?
+      - 3C = two-suited.
+      - 3D = dire spades.
+      - 3H = GF opening.
+      - 3S = decent, single-suited.
+      - 3NT = top-of-range spades.
+2S:
+   2NT = forcing, which minor?
+      - 3C/D: that minor
+      - 3H: GF, H&C
+      - 3S: GF, H&D
+   3C/D/H, etc: to play
+   3S = setting H, asking for information
+
+2NT:
+   3D/3S: simple preference
+      - After weak preference, any rebid shows GF hand.
+   3C/3H: transfer preference; stronger.
+      - Opener breaks transfer if GF two-suiter; suit has been set so bid controls.
+      - A 3NT rebid shows 24+ balanced
+         o 3C/D = 2 under transfers to H/S
+         o 3H/S = Swiss for no trumps
 
 
-System description:
+Continuations after 1NT:
+------------------------
 
-NB: R18 means "rule of 18"; the HCP added to the number of cards in the two longest suits must be greater than or equal to 18.
+This refers only to a natural 1NT, though it may be 9-11, 12-15 or 16-19
+depending on route. Maximum is an 11-count, 14-15-count, or 18-19-count
+depending on range.
 
-Opening bids:
+2D and 2H are transfers; transfer breaks apply with any 4-card fit.  2NT
+shows 4/5-card support, no side 4-card suit, and a maximum.  Other suits
+show 4 cards, and 4-card support with a maximum.  A simple jump acceptance
+shows 4-card support and a minimum.
 
-1C: 16-22 balanced or semi-balanced; 16+ single-suited (at least 6 cards, and concentrated honours); or 16-20 (ish) two-suited.
+2S is a range enquiry/transfer to C.  2NT shows a minimum, after which 3C
+is to play and other bids are GF.  3C shows any maximum, and can be passed
+if 2S was weak takeout.
 
-1D: 12-15 balanced; or 8/R18-15 with no 5-card major and no two 4-card majors.  Think of this as "any opening hand that doesn't fit 1C, 1H, 1S or 1NT".
+2NT is a transfer to diamonds; 3C is the only available super-accept.
 
-1H: 8/R18-15, with 0-3 H and 5+ S.
-1S: 8/R18-15, with 0-3 S and 5+ H.
-  Note that these promise the OTHER major!
+3C promises a long suit that may need some help to run.  Opener should
+pass, or bid 3NT with (e.g.) Kxx in the suit.
 
-1NT: 8/R18-15, 4+ H, 4+ S.
+3D is 5-5 in the majors, at least invitational.
 
-2C: either a weak 2 in D, or H&S two-suiter (weak or game-forcing).
-2D: either a weak 2 in H, or S&C two-suiter (weak or game-forcing).
-2H: either a weak 2 in S, or C&D two-suiter (weak or game-forcing).
+2C is where it gets distinctive.  This is 5-card modified puppet Keri.
+Opener responds 2H/S with a 5-card major, and 2D with all other hands. 
+This allows the system to be used with weak diamond hands with tolerance
+for at least one major (e.g. 4=0=6=3 pattern with very limited values).
+After this response, 3D is to play; other rebids by responder are as after
+a 5-card Stayman sequence.
 
-2S: H and a minor, weak or game-forcing.
+After 1NT-2C-2D, responder has some options.  All of these show
+invitational+ values.
 
-2NT: 23+ (semi-)balanced, or S&D two-suiter (weak or game-forcing).
+2H = 4 spades; may have 4 hearts.
+   - 2S: forcing; promises 4 hearts.
+      - 2NT/3NT: inv/GF, not 4 hearts.
+      - 3C/3D: 4 hearts, feature in suit bid; GF
+      - 3H/4H: inv/GF, 4 hearts.
+      - 3S: GF, 4 hearts, auto-Swiss.
+      - 4C/4D: GF, 4 hearts, Swiss.
+   - 2NT/3NT: min/max, denies a 4-card major.
+   - 3C/3D/3H: 4 spades, feature in suit bid; max.
+   - 3S/4S: min/max, 4 spades.
+   - 4C/4D: max, non-serious Swiss.
 
-3-level and above: your choice; we play natural pre-empts.
+2S = 4 hearts; denies 4 spades.
+   - 2NT/3NT: min/max, denies 4 H.
+   - 3C/3D: 4 hearts, feature in suit bid, max.
+   - 3H/4H: min/max, 4 hearts.
+   - 3S: 4 hearts, maximum, auto-Swiss.
+   - 4C/4D: GF, 4 hearts, Swiss.
 
+2NT = 3-3 majors; invitational strength.
+3C/D = 3-3 majors, GF, values in the minor.
+3NT=3-3 majors, GF.
 
-Responses and rebids:
+Continuations after 2NT:
+------------------------
 
-After 1C:
-1D = 0-7, any shape.
-1H = 8+, non-balanced.
-1S = 8+, balanced.
+3C: advanced 5-card puppet Stayman
+   - 3H/S shows 5 cards.
+   - 3D promises at least one 4-card major
+      o 3H: 0-3 hearts, 4 spades
+      o 3S: 4 hearts, 0-3 or 5 spades
+         - 3NT: 4 spades
+            o 4S: 5-4 spades and hearts
+         - 4C/D: Swiss
+         - 4H: to play.
+      o 3N: 3-3 majors
+      o 4C: 4-4 majors, invitational
+      o 4D: 4-4 majors, GF
+   - 3NT denies a 4-card major.
 
-    Opener's rebids:
-        1NT = 16-19 balanced (after 1D response)
-              16-17 balanced (after 1H/1S response)
-        2NT = 20-22 balanced (after 1D response)
-              18-22 balanced (after 1H response)
-              18-19 balanced (after 1S response)
-        3NT = 20-22 balanced (after 1S response)
+3D/3H: transfers.  Superaccept with any 4-card fit; note that 3NT is a
+superaccept that still allows the use of Swiss.
 
-    simple suit rebid: one-suited in the suit above, or two-suited:
-        C = D or H&S
-        D = H or S&m
-        H = S or H&m
-        S = C or C&D
-
-    A jump suit rebid is a game-forcing single-suited hand.  Further bids are first-round controls; responder should bid game with no slam interest.
-
-    After a simple suit rebid following 1C-1D, responder accepts the transfer with weakness, or acts otherwise with 5-7.  Opener can pass this rebid.
-    After opener's S rebid, a NT bid by responder asks for clarification: opener should bid C with the single-suited hand; D with both.  Note that this NT enquiry should include D preference if responder is weak.
-    
-    After 1C-1H/S-rebid...
-
-
-After 1D:
-1H = 0-7, any shape.
-1S = 8+, any shape.
-
-    Opener's rebids:
-        1NT = 12-15 balanced.
-        Major suit shows exactly 4 cards, and either 4=1=4=4/1=4=4=4 or a 5+-card minor.
-        Minor suit denies a 4-card major and denies a balanced hand, so shows 5+.
-
-After 1H:
-P = VERY rare!  Long H suit, no spades, no chance of game.
-1S    = 0-5, 2+ S.
-1NT   = 0-9, 0-1 S.
-2C/2D = 6-9 with 3+ S and a side suit, or 10+ with 0-2 S.
-2H    = Good raise of S (3+ cards, 10+ HCP); neither or both of S AK.
-2S    = Pre-emptive raise of S (3 cards, 6-9).
-2NT   = Encrypted raise; 3+ S, 10+ HCP; exactly one of S AK.
-3C/3D = Fit jump; good raise with neither or both of S AK and a useful side suit.
-3H    = Encrypted raise 2; 4+ S, 10+ HCP; exactly two of S AKQ.
-3S    = Pre-emptive raise of S (4 cards, 5-9).
-3NT   = To play.
-4C    = Splinter.
-4D    = Splinter.
-4H    = To play.  Probably a 4H opener with a spade void, or a hand where you'd open 1H and rebid 4H in a natural system.
-4S    = To play.
-
-After 1S:
-P = VERY rare!  Long S suit, no hearts, no chance of game.
-1NT   = 0-9, 0-2 H.
-2C/2D = 6-9 with 3+ H and a side suit, or 10+ with 0-2 H.
-2H    = Pre-emptive raise of H (3 cards, 6-9).
-2S    = Good raise of H (3+ cards, 10+ HCP); neither or both of H AK.
-2NT   = Encrypted raise; 3+ H, 10+ HCP; exactly one of H AK.
-3C/3D = Fit jump; good raise with neither or both of H AK and a useful side suit.
-3H    = Pre-emptive raise of H (4 cards, 5-9).
-3S    = Encrypted raise 2; 4+ H, 10+ HCP; exactly two of H AKQ.
-3NT   = To play.
-4C    = Splinter.
-4D    = Splinter.
-4H    = To play.
-4S    = To play.  Probably a 4S opener with a heart void, or a hand where you'd open 1S and rebid 4S in a natural system.
-
-After 1NT:
-2C/2D = To play.  Long suit, weak hand.
-2H/2S = To play.  Simple preference, weak hand.
-2NT   = Range/suit enquiry.
-3C/3D = Good hand, long minor.
-3H/3S = Encrypted raise (one of AK, 4+ card support, game-forcing strength).
-3NT   = To play.
-4C/4D = Undiscussed.  Probably either a splinter or transfer preference, but would you want to guess at the table?
-4H/4S = To play.
-
-    Rebids after the 2NT enquiry:
-    3C/3H show better H than S.
-    3D/3S show better S than H.
-    minor suits show weaker hands (8-11); major suits show better hands (12-15, probably with extra shape).
-
-After 2C:
-2D = Almost automatic.
-Any other bid indicates willingness to play at least 3D opposite a weak 2 in D, and is one-round forcing.
-
-After 2D:
-2H = Almost automatic.
-Any other bid indicates willingness to play at least 3H opposite a weak 2 in H, and is one-round forcing.
-
-After 2H:
-2S = Almost automatic.
-Any other bid indicates willingness to play at least 3H opposite a weak 2 in S, and is one-round forcing.
-
-Opener's rebid of 3 of the opened suit shows the game-forcing two-suited option.  We've not had to consider developments after this (how often does it come up?), but suggest that responder gives cheap preference if slam is possible and just picks a game if weak.
-
-After 2S:
-2NT = Tell me which minor.
-3C  = Prefer C to D; correct to H with H&D weak.
-3D  = Prefer D to C; correct to H with H&C weak.
-3H  = To play opposite the weak option.
-3NT = To play opposite the weak option.
-4H  = To play opposite the weak option.
-
-Similarly, opener can rebid 3S (if sufficient) when holding the strong hand; after 2S-3NT, 4C/D shows that minor and is game-forcing.  After 2S-4H, 4S/4NT are RKCB for H, with S showing side C and NT showing side D.
-
-After 2NT:
-3C/3D show D preference.
-3H/3S show S preference.
-3C/3H are stronger, as they automatically grant a rebid.
-
-If opener rebids 3NT, he has a game-forcing (semi-)balanced hand.  Continuations are whatever you'd play here anyway.
-Opener's transfer break or rebid after simple preference shows a first-round control and the game-forcing hand.
-
+3S: minor-suit Stayman.  Asks for a 4- or 5-card minor.
+   - 3NT: no 4-card minor.
+   - 4C/4D: 4 cards.
+   - 4H/4S: 5 cards in the corresponding minor.
 
 Encrypted bidding:
+------------------
 
-This is the fun part!
-
-Once responder makes an encrypted raise, opener can either accept or decline the key.  To decline, simply rebid the suit (cheaply with a minimum; jump if maximum.  Use common sense.).
+Once responder makes an encrypted raise, opener can either accept or decline
+the key.  To decline, simply rebid the suit (cheaply with a minimum; jump if
+maximum.  Use common sense.).
 
 If the key is accepted, subsequent bids are either two-way or three-way, depending on the key.
 
 Two-way encryption:
-This is far more common, as it requires responder and opener to have one each of the trump AK.
-Opener's rebid shows a useful side-suit if holding the trump K (0-1 losers) or a potential weakness if holding the trump A (2-3 losers).  Responder can then either place the contract, cue-bid (either showing with the K or denying with the A), or use Blackwood.
-Blackwood here is Roman Keycard, but it's both encrypted and modified: 5C is 0/3 with the trump A, 1 with the trump K. 5D is 1 with the trump A, 0/3 with the trump K. 5H is 2 without the Q, and 5S is 2 with.  Note that there are only 3 keycards still of interest!
+
+This is far more common, as it requires responder and opener to have one each
+of the trump AK.  Opener's rebid shows a useful side-suit if holding the trump
+K (0-1 losers) or a potential weakness if holding the trump A (2-3 losers).
+Responder can then either place the contract, cue-bid (either showing with the
+K or denying with the A), or use Blackwood.
+
+Blackwood here is Roman Keycard, but it's modified: 5C is 0/3, 5D is 1, 5H is 2
+without the Q, and 5S is 2 with.  Note that there are only 3 keycards still of
+interest!
 
 Three-way encryption:
+
 Requires AKQ of trumps between the two hands, and enough values for a game-forcing raise in responder's hand.  Rare!
-Opener's rebid shows a first-round control; the location of this control is encrypted.  We use the concept of the shift here: a shift of 1 indicates the next suit up (C from NT or S, D from C, H from D, S from H).  A shift of 2 indicates the next suit after that, and a shift of 3 shows the final suit.  Each cue therefore says nothing about control in the suit bid.
-The sum of the shift and the HCP of opener's honour is 5.  Opener, holding a D control, therefore bids C with the trump A, S/NT with the trump K, and H with the trump Q.
-Of course, Blackwood goes funny here too.  You only need to show 0-3 keycards, and the location of the Q is known, so 0/3 - 1 - 2 would seem a sensible set of responses.
 
-Does your brain hurt yet?  I haven't even started on competitive bidding...
+Opener's rebid shows a first-round control; the location of this control is
+encrypted.  We use the concept of the shift here: a shift of 1 indicates the
+next suit up (C from NT or S, D from C, H from D, S from H).  A shift of 2
+indicates the next suit after that, and a shift of 3 shows the final suit.
+Each cue therefore says nothing about control in the suit bid.
 
+The sum of the shift and the HCP of opener's honour is 5.  Opener, holding a D
+control, therefore bids C with the trump A, S/NT with the trump K, and H with
+the trump Q.
+
+Of course, Blackwood goes funny here too.  You only need to show 0-3 keycards,
+and the location of the Q is known, so 0 - 1 - 2 - 3 would seem a sensible set
+of responses.
+
+
+
+Slam conventions:
+-----------------
+
+RKCB (3014)
+
+Cues - once a suit is agreed and a GF is established, new suits are cues.
+
+General Swiss:
+
+4C/4D, once a game-force is established and suit agreed, are slam tries, based
+on control points
+
+Control points are 2 for an ace, 1 for a king/singleton, and 1 for the queen of
+trumps.  There are 13 available from honours; it is possible to substitute
+outside singletons for kings, but care must be taken to avoid double-counting.
+11 CPs are necessary for a small slam; 13 for a grand.
+
+4C: 4 or 6 (exceptionally 8) control points)
+   - trump suit: 0-4 CPs
+   - 4D: 5/6 CP, relay
+      - trump suit: 4 CPs
+      - suits: 6 CP, lowest king/singleton
+   - suits: 7 or 9 CP, lowest king/singleton
+   - small slam: 8 CP
+   - grand slam: 10 CP
+
+4D: 5 or 7 (exceptionally 9) control points)
+   - trump suit: 0-3 CPs
+   - 4H: 4/5 CP, relay
+      - trump suit: 5 CPs
+      - suits: 7 CP, lowest king/singleton
+   - suits: 6 or 8 CP, lowest king/singleton
+   - small slam: 7 CP
+   - grand slam: 9 CP
+
+If you find duplication in kings/singletons subtract one CP and sign off at the
+appropriate level. If your partner signs off and you have 2 unshown CPs so far,
+raise one level.
+
+If the hand bidding swiss has shown a GF, add 2 to all numbers. If it has shown
+a weak hand (opening at the 2 level or giving a 0-7 response to 1D), subtract 2
+from all numbers.
 
 Competitive bidding:
+--------------------
 
-Overcalls are constructive and for takeout, promising the two unbid suits.  Where opponents have shown two suits, overcalls are natural.
-When responding to an overcall, a bid of one of the suits is simply competitive and showing preference.  A good raise of the cheaper suit can be shown with the cheaper cuebid, and a good raise of the other suit can be shown with the other cuebid.  Similarly, 1NT and 2NT can be used as encrypted raises of the cheaper and higher suits respectively.
+Overcalls are constructive and for takeout, promising the two unbid suits.
+Where opponents have shown two suits, overcalls are natural.
 
-This means that a double needs to include the possibility of a single-suited hand, on which one might make a natural overcall.  Responder should make the cheapest bid if holding a very weak hand.
+When responding to an overcall, a bid of one of the suits is simply competitive
+and showing preference.  A good raise of the cheaper suit can be shown with the
+cheaper cuebid, and a good raise of the other suit can be shown with the other
+cuebid.  
 
-All strong hands are shown via an immediate cuebid of opponent's suit.  Again, a next-step response is negative.
+Similarly, 1NT and 2NT can be used as encrypted raises of the cheaper and
+higher suits respectively.
 
-Two-suited pre-emptive hands can be shown via 2NT.  It is worth noting that this is the Tom Jones 2NT: It's Not Unusual.  This promises both majors over a minor-suit opening, or the other major and an unspecified minor over a minor-suit opening.  Jump overcalls are weak; jump overcalls of a major suit over a minor-suit opening may include the other minor (possible canape).  Similarly, jump overcalls of 3C over a 1 of a major opening could include D.
 
-Jump cuebids are stopper-asking for 3NT; they promise a long running suit.  An overcall of 3NT promises a long running suit and a stopper.
+This means that a double needs to include the possibility of a single-suited
+hand, on which one might make a natural overcall.  Responder should make the
+cheapest bid if holding a very weak hand.
+
+All strong hands are shown via an immediate cuebid of opponent's suit.  Again,
+a next-step response is negative.
+
+Two-suited pre-emptive hands can be shown via 2NT.  It is worth noting that
+this is the Tom Jones 2NT: It's Not Unusual.  This promises both majors over a
+minor-suit opening, or the other major and an unspecified minor over a
+minor-suit opening.  
+
+Jump overcalls are weak; jump overcalls of a major suit over a minor-suit
+opening may include the other minor (possible canape).  Similarly, jump
+overcalls of 3C over a 1 of a major opening could include D.
+
+Jump cuebids are stopper-asking for 3NT; they promise a long running suit.  An
+overcall of 3NT promises a long running suit and a stopper.
