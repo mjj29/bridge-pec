@@ -91,6 +91,9 @@ We now play a far more elegant structure, similar to our responses to 1D: 1D is
 negative (0-7), 1H is positive distributional (8+), and 1S is positive balanced
 (8+, again).
 
+NB: the system has changed sufficiently that this history is out-of-date.  Do not 
+rely on it to describe our bidding!
+
 As for the system name: suction is measured in Pascals, and the system is
 encrypted.  It went from there.
 
@@ -204,7 +207,7 @@ Responses & rebids
    2NT: forcing enquiry:
       - 3C/D strong, 3H/S weak. 3C/H better H, 3D/S better S.
    3C/D: strong, good suit.
-   3H/S: good raise, with exactly one of AK.
+   3H/S: good raise.
 
 2C:
    2D = pass/correct.
@@ -256,7 +259,7 @@ Responses & rebids
       - 3C/D: that minor
       - 3H: GF, H&C
       - 3S: GF, H&D
-   3C/D/H, etc: to play
+   3C/D/H, etc: to play (pass/correct if a minor).
    3S = setting H, asking for information
 
 2NT:
@@ -430,14 +433,14 @@ If you find duplication in kings/singletons subtract one CP and sign off at the
 appropriate level. If your partner signs off and you have 2 unshown CPs so far,
 raise one level.
 
-If the hand bidding swiss has shown a GF, add 2 to all numbers. If it has shown
+If the hand bidding Swiss has shown a GF, add 2 to all numbers. If it has shown
 a weak hand (opening at the 2 level or giving a 0-7 response to 1D), subtract 2
 from all numbers.
 
 Competitive bidding:
 --------------------
 
-Overcalls are constructive and for takeout, promising the two unbid suits.
+Overcalls are constructive and for takeout, promising the two unbid suits (at least 5-4).
 Where opponents have shown two suits, overcalls are natural.
 
 When responding to an overcall, a bid of one of the suits is simply competitive
@@ -467,3 +470,50 @@ overcalls of 3C over a 1 of a major opening could include D.
 
 Jump cuebids are stopper-asking for 3NT; they promise a long running suit.  An
 overcall of 3NT promises a long running suit and a stopper.
+
+
+Dealing with interference over 1C:
+Interference is a double, for penalty interest (showing 16+):
+ - Redouble creates a game-force, and indicates that the double may not have been 
+   a winning action.
+ - Pass forces redouble; either to play or with a two-suiter not including clubs.
+ - 1D/1H are transfers to 1H/1S.  Note that opener may pass these if holding a 5-card 
+   suit.
+Interference is a double showing C:
+ - Redouble creates a game-force; passes are now forcing and doubles are for penalty.
+ - Pass shows a weak hand, with nowhere in particular to play.
+ - Suit bids are natural, 8-14, and promise 4 cards.
+ - 1NT shows a balanced hand, 8-14, with a club stop.
+Interference is a double for takeout:
+ - Redouble still creates a forcing pass situation.
+ - Ask opponents "takeout of what, exactly?".
+ - 1NT cannot show a stopper in any particular suit.
+Interference is a natural overcall:
+ - Responder's double creates a game-force.
+ - 1NT promises a stop; 8-14 balanced.
+ - Suit bids are natural, 8-14.
+ - Pass is a weak hand with nowhere to go (potentially including an 8-11 balanced hand with no stop).
+
+Dealing with interference over 1D:
+Interference is a double:
+ - Redouble with good 8+ hands.
+ - Pass with weak hands.
+ - Suit bids are natural, weak, 6-card suit.
+Interference is a natural or artificial overcall:
+ - Pass with weak hands.
+ - Double to establish a game-force (and forcing passes, etc.).
+   - Suction rebids are on; immediate NT bid denies a stop.
+   - To show a stop, Suction-force into opponents' suit then bid NT.
+ - Suit bids are natural, weak, 6-card suit.
+
+Dealing with balancing-seat interference (e.g. 1D-(P)-1S-(2C)):
+A game-force has been established by the first two bids, so passes are forcing.
+ - NT bids promise a stopper.
+ - Suction-style rebids are on if 3C is a sufficient bid.
+ - Pass indicates a balanced hand without a stopper in opponents' suit.
+   - Responder's NT bids here are Lebensohl style
+   - There are no weak hands to show, so the only difference is in showing/denying a stopper.
+ - Double is penalties.
+If the first two bids were 1C-1D, it's a good idea to subside quietly.  If they were 1C-1H, 
+passes are non-forcing (given that we have at best a thin game).  If 1C-1S, the same rules apply 
+as after 1D-1S.
