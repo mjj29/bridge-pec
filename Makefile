@@ -13,7 +13,7 @@ blank.pdf: blank.tex
 	pdflatex $<
 
 systemnotes-book.pdf: systemnotes.pdf ${CARD} blank.pdf
-	pdfnup --paper a4paper --nup 1x1 --noautoscale true --scale 1.4 --tidy false --outfile card.pdf ${CARD}
+	pdfnup --paper a4paper --nup 1x1 --noautoscale true --scale 1.4 --outfile card.pdf ${CARD}
 	pdftk S=$< C=card.pdf cat C4 C1-3 S1-end output temp.pdf
 	pdf2ps temp.pdf temp.ps
 	< temp.ps psbook >/dev/null 2>log
