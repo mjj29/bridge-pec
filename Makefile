@@ -1,16 +1,30 @@
-# dummy
+#
+# 'make' will build the system notes. Other notable targets:
+#
+# make (something).2up.pdf will 2-up (something).pdf for printing cards
+#
+# make systemnotes-book.pdf will create the booklet of the long match card and the system notes
+#
+# make CARD=(something).pdf systemnotes-book.pdf will use a different convention card to make the booklet
+#
+# make clean will tidy up
+#
+
 CARD?=level4_7boardrounds.pdf
 
-all: systemnotes.pdf systemnotes-book.pdf
+all: systemnotes.pdf 
 
 clean:
-	rm -f *.aux *.log systemnotes.pdf blank.pdf systemnotes-book.pdf temp* log card.pdf
+	rm -f *.aux *.log systemnotes.pdf blank.pdf systemnotes-book.pdf temp* log card.pdf *.2up.pdf
 
 systemnotes.pdf: systemnotes.tex
 	pdflatex $<
 
 blank.pdf: blank.tex
 	pdflatex $<
+
+%.2up.pdf: %.pdf
+	pdfnup  --nup 2x1 --outfile $@ $<
 
 systemnotes-book.pdf: systemnotes.pdf ${CARD} blank.pdf
 	pdfnup --paper a4paper --nup 1x1 --noautoscale true --scale 1.4 --outfile card.pdf ${CARD}
