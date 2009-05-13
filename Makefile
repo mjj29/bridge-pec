@@ -19,6 +19,7 @@ clean:
 
 systemnotes.pdf: systemnotes.tex
 	pdflatex $<
+	pdflatex $<
 
 blank.pdf: blank.tex
 	pdflatex $<
