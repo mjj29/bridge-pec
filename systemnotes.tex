@@ -1,7 +1,22 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,14pt]{extarticle}
 
 \usepackage{palatino}
 \usepackage{fullpage}
+
+\usepackage[
+  bookmarks,
+  bookmarksopen,
+  bookmarksnumbered=false,
+  colorlinks,
+  pdfpagemode=None,
+  urlcolor=black,
+  citecolor=black,
+  linkcolor=black,
+  pagecolor=black,
+  plainpages=false,
+  pdfpagelabels,
+  pdftitle={System notes on Pascal's Encrypted Club},
+  pdfauthor={Matthew Johnson and Henry Lockwood}]{hyperref}
 
 \author{Matthew Johnson\\Henry Lockwood}
 \title{System notes on Pascal's Encrypted Club}
@@ -77,9 +92,10 @@ defence to 1NT, or who suggested it as a structure for 2-level openings, but
 the fact remains that we like it.  Essentially, each 2-level bid shows either a
 weak 2 in the suit above OR the other two suits.  Of course, this leaves the
 non-touching pairs uncovered, and leaves you with two ways to show a pre-empt
-in clubs.  We soon thought of playing 2$\spadesuit$ as showing $\heartsuit$ and a minor (as opposed
-to the original $\clubsuit$ or $\heartsuit$\&$\diamondsuit$).  This still left $\spadesuit$\&$\diamondsuit$ uncovered, but we decided to
-cope.
+in clubs.  We soon thought of playing 2$\spadesuit$ as showing $\heartsuit$ and
+a minor (as opposed to the original $\clubsuit$ or
+		$\heartsuit$\&$\diamondsuit$).  This still left
+$\spadesuit$\&$\diamondsuit$ uncovered, but we decided to cope.
 
 At this stage, our 2NT opening was fairly standard: 20--22 balanced or
 semi-balanced.  After a few sessions playing, we modified this to include the
@@ -142,13 +158,13 @@ elsewhere in this document will be given as \xref{sec:resp:2level}.
 Responses in Section \ref{sec:resp:1level}.
 
 \begin{tabular}{ll}
-1$\clubsuit$  & 12--15 balanced or 10--15 unbalanced, no five-card major and at most one \\
-	 & four-card major. \orange{11C11}\\
-1$\diamondsuit$  & 16+; excludes balanced hands 24+ and game-forcing two-suited hands. \orange{11C12}\\
-1$\heartsuit$  & 10--15 unbalanced, with 4+ spades and additional constraints: first or
-      second seat\\
-	 & non-vulnerable, possible canape with hearts, but 5+ spades if
-      not holding 4+ hearts. \\
+1$\clubsuit$  & 12--15 balanced or 10--15 unbalanced, no five-card major and at most\\
+	 & one four-card major. \orange{11C11}\\
+1$\diamondsuit$  & 16+; excludes balanced hands 24+ and game-forcing two-suited\\
+	& hands. \orange{11C12}\\
+1$\heartsuit$  & 10--15 unbalanced, with 4+ spades and additional constraints: first\\
+	 & or second seat non-vulnerable, possible canape with hearts, \\
+	 & but 5+ spades if not holding 4+ hearts. \\
 	 & Other positions, or vulnerable, 5+ spades and 0--3 hearts. \orange{11C14}\\
 1$\spadesuit$  & 10--15 unbalanced, 5+ hearts, and 0--3 spades.\\
 1NT & 9--11 balanced in first or second non-vulnerable \orange{11F3}; \\
@@ -584,7 +600,7 @@ We play a modified form of suction as the escape after 1NT-X.
 \end{itemize}
 
 \subsubsection{After direct overcalls of 1NT}
-\label{sec:resp:1nx}
+\label{sec:resp:lebensohl}
 
 Lebensohl:
 
@@ -893,7 +909,7 @@ Dixon \orange{11Q2}:
 \label{sec:def:weak}
 
 Double is for takeout up to 4$\heartsuit$. After a weak two and a takeout double, there
-are Lebensohl responses. 4N is takeout over 4$\spadesuit$ and a big two suiter otherwise.
+are Lebensohl responses \xref{sec:resp:lebensohl}. 4N is takeout over 4$\spadesuit$ and a big two suiter otherwise.
 
 Over a weak two,  2NT is natural showing 16-18 and ``Continuations after 2NT'' \xref{sec:resp:2n}
 apply.
@@ -980,7 +996,7 @@ Doubles of freely bid slams are Lightner, asking for the lead of dummy's first s
    \item Suction-style rebids are on if 3$\clubsuit$ is a sufficient bid (1$\diamondsuit$ opener)
    \item Pass indicates a balanced hand without a stopper in opponents' suit.
 	\begin{itemize}
-      \item Responder's NT bids here are Lebensohl style
+      \item Responder's NT bids here are Lebensohl style \xref{sec:resp:lebensohl}
       \item There are no weak hands to show, so the only difference is in showing/denying a stopper.
 	\end{itemize}
    \item Double is penalties.
