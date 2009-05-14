@@ -8,10 +8,14 @@
 
 \begin{document}
 
+\newcommand{ \orange}[1]{[OB #1]}
+\newcommand{\xref}[1]{[\ref{#1}]}
+
 \maketitle
 \tableofcontents
 
 \section{A brief history}
+\label{sec:history}
 
 NB: the system has changed sufficiently that this history is out-of-date.  Do
 not rely on it to describe our bidding!
@@ -111,8 +115,16 @@ As for the system name: suction is measured in Pascals, and the system is
 encrypted.  It went from there.
 
 \section{System description}
+\label{sec:system}
+
+\subsection{Notation}
+\label{sec:notation}
+
+References to the EBU Orange Book will be given as \orange{11C3}. References
+elsewhere in this document will be given as \xref{sec:resp:2level}.
 
 \subsection{Philosophy}
+\label{sec:philosophy}
 
 \begin{itemize}
 \item establish strength first
@@ -122,46 +134,69 @@ encrypted.  It went from there.
 \end{itemize}
 
 \subsection{Openings}
+\label{sec:openings}
 
 \subsubsection{1 level}
+\label{sec:open:1level}
+
+Responses in Section \ref{sec:resp:1level}.
 
 \begin{tabular}{ll}
 1$\clubsuit$  & 12--15 balanced or 10--15 unbalanced, no five-card major and at most one \\
-	 & four-card major.\\
-1$\diamondsuit$  & 16+; excludes balanced hands 24+ and game-forcing two-suited hands.\\
+	 & four-card major. \orange{11C11}\\
+1$\diamondsuit$  & 16+; excludes balanced hands 24+ and game-forcing two-suited hands. \orange{11C12}\\
 1$\heartsuit$  & 10--15 unbalanced, with 4+ spades and additional constraints: first or
       second seat\\
 	 & non-vulnerable, possible canape with hearts, but 5+ spades if
       not holding 4+ hearts. \\
-	 & Other positions, or vulnerable, 5+ spades and 0--3 hearts.\\
+	 & Other positions, or vulnerable, 5+ spades and 0--3 hearts. \orange{11C14}\\
 1$\spadesuit$  & 10--15 unbalanced, 5+ hearts, and 0--3 spades.\\
-1NT & 9--11 balanced in first or second non-vulnerable; otherwise 10--15
-      unbalanced with \\
-	 & 4+ in both majors.\\
-\end{tabular}
-
-\subsubsection{2 level}
-
-\begin{tabular}{ll}
-2$\clubsuit$  & weak with $\diamondsuit$, single suited OR weak with $\heartsuit$\&$\spadesuit$, 4--4 or better OR GF with $\heartsuit$\&$\spadesuit$.\\
-2$\diamondsuit$  & weak with $\heartsuit$, single suited OR weak with $\spadesuit$\&$\clubsuit$, 5+/4+ or better OR GF with $\spadesuit$\&$\clubsuit$.\\
-2$\heartsuit$  & weak with $\spadesuit$, single suited OR weak with $\clubsuit$\&$\diamondsuit$, 4+/4+ OR GF with $\clubsuit$\&$\diamondsuit$.\\
-2$\spadesuit$  & weak with $\heartsuit$ and a minor OR GF with $\heartsuit$ and a minor. 4+/4+.\\
-2NT & weak with $\diamondsuit$\&$\spadesuit$, 4+/4+, OR 24+ balanced OR GF with $\diamondsuit$\&$\spadesuit$.\\
-\end{tabular}
-
-\subsubsection{Higher openings}
-
-\begin{tabular}{ll}
-3-level & natural in suits. \\
-3NT & gambling. \\
-Higher-level openings & natural. \\
-4NT & specific ace-asking. \\
+1NT & 9--11 balanced in first or second non-vulnerable \orange{11F3}; \\
+	 & otherwise 10--15 unbalanced with 4+ in both majors. \orange{11F5}\\
 \end{tabular}
 
 \newpage 
 
+\subsubsection{2 level}
+\label{sec:open:2level}
+
+Responses in Section \ref{sec:resp:2level}.
+
+\begin{tabular}{ll}
+2$\clubsuit$  & weak with $\diamondsuit$, single suited \\
+		& OR weak with $\heartsuit$\&$\spadesuit$, 4--4 or better \\
+		& OR GF with $\heartsuit$\&$\spadesuit$. \orange{11G10}\\
+2$\diamondsuit$  & weak with $\heartsuit$, single suited \\
+	& OR weak with $\spadesuit$\&$\clubsuit$, 5+/4+ or better \\
+	& OR GF with $\spadesuit$\&$\clubsuit$. \orange{11G10}\\
+2$\heartsuit$  & weak with $\spadesuit$, single suited \\
+		& OR weak with $\clubsuit$\&$\diamondsuit$, 4+/4+ \\
+		& OR GF with $\clubsuit$\&$\diamondsuit$. \orange{11G10}\\
+2$\spadesuit$  & weak with $\heartsuit$ and a minor \\
+		& OR GF with $\heartsuit$ and a minor. 4+/4+. \orange{11G10}\\
+2NT & weak with $\diamondsuit$\&$\spadesuit$, 4+/4+, \\
+		& OR 24+ balanced \\
+		& OR GF with $\diamondsuit$\&$\spadesuit$. \orange{11H8} \\
+\end{tabular}
+
+\subsubsection{Higher openings}
+\label{sec:open:higher}
+
+Responses in Section \ref{sec:resp:higher}.
+
+\begin{tabular}{ll}
+3-level & natural in suits. \\
+3NT & gambling. \orange{11K3} \\
+Higher-level openings & natural. \\
+4NT & specific ace-asking. \orange{11L1} \\
+\end{tabular}
+
+
 \subsection{Responses \& rebids}
+\label{sec:responses}
+
+\subsubsection{1 level}
+\label{sec:resp:1level}
 
 \begin{itemize}
 \item 1$\clubsuit$:
@@ -174,7 +209,7 @@ Higher-level openings & natural. \\
    \item 1$\heartsuit$ = 10--15 any
 		\begin{itemize}
       \item 1$\spadesuit$ = any 10-11
-      \item 1NT = 12--15 balanced; see ``Continuations after 1NT".
+      \item 1NT = 12--15 balanced; see ``Continuations after 1NT" \xref{sec:resp:1n}.
       \item 2 major suit bids 12-15 unbal and promise exactly 4; either 4-4-4-1
             with singleton other major or has a longer minor (as there's no other
             hand shape that fits the opening and has exactly one 4-card major)
@@ -185,7 +220,7 @@ Higher-level openings & natural. \\
       \item major suit bids promise exactly 4; either 4-4-4-1 with singleton other
          major or has a longer minor (as there's no other hand shape that fits the
          opening and has exactly one 4-card major)
-      \item 1NT = 12--15 balanced; see ``Continuations after 1NT".
+      \item 1NT = 12--15 balanced; see ``Continuations after 1NT" \xref{sec:resp:1n}.
       \item minor suit bids deny a 4-card major.
 		\end{itemize}
    \item 1N/2x = transfer weak jump shift 6+ card suit above, 0--9.
@@ -202,7 +237,7 @@ Higher-level openings & natural. \\
    \item 1$\heartsuit$ = 0--7, no 6-card suit.
    \item 1$\spadesuit$ = 8+, game-forcing.
 		\begin{itemize}
-      \item 1NT rebid = 16--19 balanced; see ``Continuations after 1NT".
+      \item 1NT rebid = 16--19 balanced; see ``Continuations after 1NT" \xref{sec:resp:1n}.
       \item Simple suit rebids are suction-style, showing either the suit above
          (single-suited) or the other two ($\clubsuit$$\rightarrow$ $\diamondsuit$ or majors; $\diamondsuit$$\rightarrow$ $\heartsuit$ or ($\spadesuit$\&minor); $\heartsuit$$\rightarrow$
          $\spadesuit$ or minors; $\spadesuit$$\rightarrow$$\clubsuit$ or ($\heartsuit$\&minor). Could be 3-suited, short in the suit
@@ -213,7 +248,7 @@ Higher-level openings & natural. \\
 				single-suited hand, or a suit with the two-suited option.
 			\end{itemize}
       \item Jump suit rebids are GF, single-suited.
-      \item 2NT rebid = 20--23 balanced; see ``Continuations after 2NT".
+      \item 2NT rebid = 20--23 balanced; see ``Continuations after 2NT" \xref{sec:resp:2n}.
 		\end{itemize}
    \item 1N/2x = transfer weak jump shift 6+ card suit above, 0--7.
 		\begin{itemize}
@@ -231,13 +266,13 @@ Higher-level openings & natural. \\
    \item 1NT = 1-round force.
    \item 2$\clubsuit$/$\diamondsuit$ = natural, forcing.
    \item 2$\heartsuit$ = GF+ raise, neither or both of $\spadesuit$ AK.
-   \item 2NT = good raise, with exactly one of $\spadesuit$ AK.
+   \item 2NT = good raise, with exactly one of $\spadesuit$ AK \xref{sec:enc:2way}.
 		\begin{itemize}
       \item Next bid shows 0/1 loser and the $\spadesuit$ K, or 2/3 losers and the SA.
          Rebidding $\spadesuit$ denies the other top honour.
 		\end{itemize}
    \item 3$\clubsuit$/3$\diamondsuit$ = fit jump.
-   \item 3$\heartsuit$ = GF raise, two of AKQ. (see ``Three-way encryption")
+   \item 3$\heartsuit$ = GF raise, two of AKQ. (see ``Three-way encryption" \xref{sec:enc:3way})
    \item 4$\clubsuit$/$\diamondsuit$/$\heartsuit$ = splinter agreeing spades
 	\end{itemize}
 
@@ -247,13 +282,13 @@ Higher-level openings & natural. \\
    \item 1NT = 1-round force.
    \item 2$\clubsuit$/$\diamondsuit$ = natural, forcing.
    \item 2$\spadesuit$ = GF+ raise, neither or both of $\heartsuit$ AK.
-   \item 2NT = good raise, with exactly one of $\heartsuit$ AK.
+   \item 2NT = good raise, with exactly one of $\heartsuit$ AK \xref{sec:enc:2way}.
 		\begin{itemize}
       \item Next bid shows 0/1 loser and the $\heartsuit$ K, or 2/3 losers and the HA.
          Rebidding $\heartsuit$ denies the other top honour.
 		\end{itemize}
    \item 3$\clubsuit$/3$\diamondsuit$ = fit jump.
-   \item 3$\spadesuit$ = GF raise, two of AKQ. (see ``Three-way encryption")
+   \item 3$\spadesuit$ = GF raise, two of AKQ. (see ``Three-way encryption" \xref{sec:enc:3way})
    \item 4$\clubsuit$/$\diamondsuit$/$\spadesuit$ = splinter agreeing hearts
 	\end{itemize}
 
@@ -261,21 +296,24 @@ Higher-level openings & natural. \\
 	\begin{itemize}
    \item 1$\spadesuit$ = forcing enquiry.
 		\begin{itemize}
-      \item 1NT = both majors. Continuations as after artificial 1NT opening.
+      \item 1NT = both majors. Continuations as after artificial 1NT opening \xref{sec:resp:1nart}.
 		\end{itemize}
    \item 1NT = non-forcing.
    \item 2$\clubsuit$/$\diamondsuit$ = natural, forcing.
    \item 2$\heartsuit$ = GF+ raise, neither or both of $\spadesuit$ AK.
    \item 2$\spadesuit$/3$\spadesuit$/4$\spadesuit$ = limit raises/to play.
-   \item 2NT = good raise, with exactly one of $\spadesuit$ AK.
+   \item 2NT = good raise, with exactly one of $\spadesuit$ AK \xref{sec:enc:2way}.
 		\begin{itemize}
       \item Next bid shows 0/1 loser and the $\spadesuit$ K, or 2/3 losers and the SA.
          Rebidding $\spadesuit$ denies the other top honour.
 		\end{itemize}
    \item 3$\clubsuit$/3$\diamondsuit$ = fit jump.
-   \item 3$\heartsuit$ = GF raise, two of AKQ. (see ``Three-way encryption")
+   \item 3$\heartsuit$ = GF raise, two of AKQ. (see ``Three-way encryption" \xref{sec:enc:3way})
    \item 4$\clubsuit$/$\diamondsuit$/$\heartsuit$ = splinter agreeing spades
 	\end{itemize}
+
+\subsubsection{Artificial 1NT}
+\label{sec:resp:1nart}
 
 \item 1NT if artificial:
 	\begin{itemize}
@@ -288,6 +326,9 @@ Higher-level openings & natural. \\
    \item 3$\clubsuit$/$\diamondsuit$: strong, good suit.
    \item 3$\heartsuit$/$\spadesuit$: good raise.
 	\end{itemize}
+
+\subsubsection{2 level}
+\label{sec:resp:2level}
 
 \item 2$\clubsuit$:
 	\begin{itemize}
@@ -385,12 +426,15 @@ Higher-level openings & natural. \\
       \item A 3NT rebid shows 24+ balanced
 			\begin{itemize}
          \item 3$\clubsuit$/$\diamondsuit$ = 2 under transfers to $\heartsuit$/$\spadesuit$
-         \item 3$\heartsuit$/$\spadesuit$ = Swiss for no trumps
+         \item 3$\heartsuit$/$\spadesuit$ = Swiss for no trumps \xref{sec:swiss}
          \item 4N = Quantitative
          \item 5N = Quantitative (for 6 or 7)
 			\end{itemize}
 		\end{itemize}
 	\end{itemize}
+
+\subsubsection{Responses to higher opening bids}
+\label{sec:resp:higher}
 
 \item 3NT:
 	\begin{itemize}
@@ -419,7 +463,9 @@ Higher-level openings & natural. \\
 
 \end{itemize}
 
-\section{Continuations after 1NT}
+\subsection{Continuations after 1NT}
+\label{sec:resp:1n}
+
 
 This refers only to a natural 1NT, though it may be 9--11, 12--15 or 16--19
 depending on route. Maximum is an 11-count, 14--15-count, or 18--19-count
@@ -445,7 +491,9 @@ pass, or bid 3NT with (e.g.) Kxx in the suit.
 
 \item 3$\heartsuit$/3$\spadesuit$ are slam tries in clubs and diamonds.
 
-\item 4N is blackwood.
+\item 4$\clubsuit$/4$\diamondsuit$ are General Swiss  \xref{sec:swiss}.
+
+\item 4N is Blackwood \xref{sec:blackwood}.
 
 \item 2$\clubsuit$ is where it gets distinctive.  This is 5-card modified puppet Keri, which allows the system to be used with weak diamond hands with tolerance for at least one major (e.g. 4=0=6=3 pattern with very limited values).
 \end{itemize}
@@ -468,13 +516,13 @@ pass, or bid 3NT with (e.g.) Kxx in the suit.
 				\item 2NT/3NT: inv/GF, not 4 hearts.
 				\item 3$\clubsuit$/3$\diamondsuit$: 4 hearts, feature in suit bid; GF
 				\item 3$\heartsuit$/4$\heartsuit$: inv/GF, 4 hearts.
-				\item 3$\spadesuit$: GF, 4 hearts, auto-Swiss.
-				\item 4$\clubsuit$/4$\diamondsuit$: GF, 4 hearts, Swiss.
+				\item 3$\spadesuit$: GF, 4 hearts, auto-Swiss \xref{sec:swiss}.
+				\item 4$\clubsuit$/4$\diamondsuit$: GF, 4 hearts, Swiss \xref{sec:swiss}.
 				\end{itemize}
 			\item 2NT/3NT: min/max, denies a 4-card major.
 			\item 3$\clubsuit$/3$\diamondsuit$/3$\heartsuit$: 4 spades, feature in suit bid; max.
 			\item 3$\spadesuit$/4$\spadesuit$: min/max, 4 spades.
-			\item 4$\clubsuit$/4$\diamondsuit$: max, non-serious Swiss.
+			\item 4$\clubsuit$/4$\diamondsuit$: max, non-serious Swiss \xref{sec:swiss}.
 			\end{itemize}
 
 		\item 2$\spadesuit$ = 4 hearts; denies 4 spades.
@@ -482,8 +530,8 @@ pass, or bid 3NT with (e.g.) Kxx in the suit.
 			\item 2NT/3NT: min/max, denies 4 $\heartsuit$.
 			\item 3$\clubsuit$/3$\diamondsuit$: 4 hearts, feature in suit bid, max.
 			\item 3$\heartsuit$/4$\heartsuit$: min/max, 4 hearts.
-			\item 3$\spadesuit$: 4 hearts, maximum, auto-Swiss.
-			\item 4$\clubsuit$/4$\diamondsuit$: GF, 4 hearts, Swiss.
+			\item 3$\spadesuit$: 4 hearts, maximum, auto-Swiss \xref{sec:swiss}.
+			\item 4$\clubsuit$/4$\diamondsuit$: GF, 4 hearts, Swiss \xref{sec:swiss}.
 			\end{itemize}
 
 		\item 2NT = 3--3 majors; invitational strength.
@@ -492,7 +540,8 @@ pass, or bid 3NT with (e.g.) Kxx in the suit.
 		\end{itemize}
 	\end{itemize}
 
-\subsection{After 1NT is doubled for penalties}
+\subsubsection{After 1NT is doubled for penalties}
+\label{sec:resp:1nx}
 
 We play a modified form of suction as the escape after 1NT-X.
 
@@ -534,7 +583,8 @@ We play a modified form of suction as the escape after 1NT-X.
 	\end{itemize}
 \end{itemize}
 
-\subsection{After direct overcalls of 1NT}
+\subsubsection{After direct overcalls of 1NT}
+\label{sec:resp:1nx}
 
 Lebensohl:
 
@@ -557,7 +607,8 @@ Lebensohl:
 \item Double of a natural 2$\clubsuit$ overcall is stayman showing a club stop (optional)
 \end{itemize}
 
-\section{Continuations after 2NT}
+\subsection{Continuations after 2NT}
+\label{sec:resp:2n}
 
 \begin{itemize}
 \item 3$\clubsuit$: advanced 5-card puppet Stayman
@@ -573,7 +624,7 @@ Lebensohl:
       \item 3$\spadesuit$: 4 hearts, 0--3 or 5 spades
 			\begin{itemize}
          \item 3NT: 3/4 spades (Responder bids 4$\spadesuit$ if 5/4)
-         \item 4$\clubsuit$/$\diamondsuit$: 4 hearts, Swiss
+         \item 4$\clubsuit$/$\diamondsuit$: 4 hearts, Swiss \xref{sec:swiss}
          \item 4$\heartsuit$: to play.
 			\end{itemize}
       \item 3N: 4--4 majors
@@ -596,11 +647,12 @@ superaccept that still allows the use of Swiss.
    \item 4$\heartsuit$/4$\spadesuit$: 5 cards in the corresponding minor.
 	\end{itemize}
 
-\item 4$\clubsuit$/$\diamondsuit$: Swiss
+\item 4$\clubsuit$/$\diamondsuit$: Swiss \xref{sec:swiss}
 \item 4N: Quantitative
 \end{itemize}
 
 \section{Encrypted bidding}
+\label{sec:encryption}
 
 Once responder makes an encrypted raise, opener can either accept or decline
 the key.  To decline, simply rebid the suit (cheaply with a minimum; jump if
@@ -609,6 +661,7 @@ maximum.  Use common sense.).
 If the key is accepted, subsequent bids are either two-way or three-way, depending on the key.
 
 \subsection{Two-way encryption}
+\label{sec:enc:2way}
 
 This is far more common, as it requires responder and opener to have one each
 of the trump AK. Opener's rebid shows a useful side-suit if holding the trump
@@ -620,6 +673,7 @@ Blackwood here is Roman Keycard, but it's modified because there are only three 
 still of interest.
 
 \subsection{Three-way encryption}
+\label{sec:enc:3way}
 
 Requires AKQ of trumps between the two hands, and enough values for a
 game-forcing raise in responder's hand.  Rare!
@@ -639,17 +693,57 @@ and the location of the Q is known, so 0--1--2--3 would seem a sensible set
 of responses.
 
 \section{Slam conventions}
+\label{sec:slam}
 
 \subsection{Roman key-card Blackwood (3014)}
+\label{sec:rkcb}
+
+4NT with an agreed suit is Roman key-card Blackwood. The key-cards are the four aces
+and the king of the agreed suit. Responses are:
+
+\begin{itemize}
+\item 5$\clubsuit$: 0 or 3 key cards
+\item 5$\diamondsuit$: 1 or 4 key cards
+\item 5$\heartsuit$: 2 or 5 key cards without the queen of trumps
+\item 5$\spadesuit$: 2 or 5 key cards with the queen of trumps
+\end{itemize}
 
 Bids at the 5 level are exclusion blackwood. Responses are for keycards outside
 the suit bid, starting at the next bid.
 
+\newpage
+
+\subsection{Blackwood}
+\label{sec:blackwood}
+
+When no suit has/can be agreed, we play a modified form of RKCB which only asks
+for the four aces and has the following responses:
+
+\begin{itemize}
+\item 5$\clubsuit$: 0 or 3 aces
+\item 5$\diamondsuit$: 1 or 4 aces
+\item 5$\heartsuit$: 2 aces
+\end{itemize}
+
+5$\spadesuit$ is always available as a sign-off in 5N.
+
+\subsection{King you have or king you don't}
+\label{sec:kyhokyd}
+
+After RKCB, the next available suit which is not the trump suit asks for the
+queen of trumps and outside kings. 5N just asks for outside kings. Without the
+queen of trumps the respons to the queen-ask is always the trump suit at the
+lowest level. Responses to 5N, or if you have the queen of trumps are; with one
+outside king, bid that suit. With two outside kings, bid the suit of the king
+you are missing. With no kings bid 6 of the trump suit (or 5N if available).
+
 \subsection{First-round-control showing cues}
+\label{sec:cues}
 
 Once a suit is agreed and a GF is established, new suits are cues.
 
 \subsection{General Swiss}
+\label{sec:swiss}
 
 4$\clubsuit$/4$\diamondsuit$, once a game-force is established and suit agreed, are slam tries, based
 on control points
@@ -696,6 +790,7 @@ a weak hand (opening at the 2 level or giving a 0--7 response to 1$\diamondsuit$
 from all numbers.
 
 \section{Competitive bidding}
+\label{sec:competitive}
 
 We tried an artificial overcall scheme but found it couldn't cope with a number of situations.
 Therefore, we have a fairly natural overcall style.
@@ -716,14 +811,14 @@ overcalls of 3$\clubsuit$ over a 1 of a major opening could include $\diamondsui
 In pass-out seat jump overcalls are intermediate. Also, after the sequence
 (Pass)-Pass-(1N).
 
-Jump cuebids are stopper-asking for 3NT; they promise a long running suit.  An
+Jump cuebids are stopper-asking for 3NT \orange{11N10}; they promise a long running suit.  An
 overcall of 3NT promises a long running suit and a stopper.
 
 Simple cuebids are Michaels showing at least 5--5 in the majors (over a minor)
-or the other major and either minor (over a major). In all cases they are
+or the other major and either minor (over a major) \orange{11N7}. In all cases they are
 either weak or strong. Similarly, 2NT over a 1 level bid is unusual, showing
 5--5 or better in the minors (over a major) or the other minor and either major
-(over a minor). Again, it's weak or strong.
+(over a minor) \orange{11N7}. Again, it's weak or strong.
 
 After Michaels or Unusual, bidding any of the suits which could have been shown
 is pass or correct at that level. Overcaller then corrects to the next highest
@@ -750,6 +845,7 @@ For example:
 
 
 \subsection{Defences}
+\label{sec:defences}
 
 These are mostly all based on suction:
 
@@ -761,50 +857,57 @@ These are mostly all based on suction:
 \end{itemize}
 
 \subsubsection{Natural 1NT}
+\label{sec:def:1n}
 
 Suction, constructive values. Double is for penalties and 2N shows a
-non-touching two suiter.
+non-touching two suiter. \orange{11P7}
 
 \subsubsection{Artificial strong bids}
+\label{sec:def:strong}
 
 Suction, weak. Double shows the suction bid in their suit and 2N shows a
-non-touching two suiter.
+non-touching two suiter. \orange{11M2}
 
 \subsubsection{Phoney/Prepared suits}
+\label{sec:def:short}
 
 Suction, constructive values. Double shows the suction bid in their suit and 2N
-is natural.
+is natural. \orange{11M2}
 
 \subsubsection{Multi 2$\diamondsuit$}
+\label{sec:def:multi}
 
-Dixon:
+Dixon \orange{11Q2}:
 
 \begin{itemize}
 \item X: 16+
 \item 2$\heartsuit$/$\spadesuit$: takeout of the other major
 \item 2N: 16-18 bal, stops in both majors.
 	\begin{itemize}
-	\item Responses as ``Continuations after 2NT"
+	\item Responses as ``Continuations after 2NT" \xref{sec:resp:2n}
 	\end{itemize}
 \item 3x: intermediate, natural
 \end{itemize}
 
 \subsubsection{Natural weak openings}
+\label{sec:def:weak}
 
 Double is for takeout up to 4$\heartsuit$. After a weak two and a takeout double, there
 are Lebensohl responses. 4N is takeout over 4$\spadesuit$ and a big two suiter otherwise.
 
-Over a weak two,  2NT is natural showing 16-18 and ``Continuations after 2NT''
+Over a weak two,  2NT is natural showing 16-18 and ``Continuations after 2NT'' \xref{sec:resp:2n}
 apply.
 
-\section{Lightner Doubles}
+\subsubsection{Lightner Doubles}
+\label{sec:def:lightner}
 
 Doubles of freely bid slams are Lightner, asking for the lead of dummy's first shown suit.
 
+\subsection{Dealing with interference}
+\label{sec:interference}
 
-\section{Dealing with interference}
-
-\subsection{Direct interference over 1$\clubsuit$}
+\subsubsection{Direct interference over 1$\clubsuit$}
+\label{sec:intf:1c}
 
 \begin{itemize}
 \item 1$\clubsuit$-(X) (penalty interest (showing 16+):
@@ -831,14 +934,15 @@ Doubles of freely bid slams are Lightner, asking for the lead of dummy's first s
 \item 1$\clubsuit$-(natural bid):
 	\begin{itemize}
    \item Responder's double creates a game-force.
-   \item 1NT promises a stop; 10--15 balanced.
+   \item 1NT promises a stop; 10--15 balanced. See ``Responses after 1NT'' \xref{sec:resp:1n}
    \item Suit bids are natural, 10--15.
-   \item Exception: cheapest bid (or 2$\spadesuit$ over 1$\spadesuit$) shows a 12-15 balanced hand with no stop.  System is on, including Keri, transfers etc.  After 1$\clubsuit$-(1$\diamondsuit$)-1$\heartsuit$, for example, 1$\spadesuit$ is a range enquiry or transfer to $\clubsuit$.
+   \item Exception: cheapest bid (or 2$\spadesuit$ over 1$\spadesuit$) shows a 12-15 balanced hand with no stop.  System is on, including Keri, transfers etc.  After 1$\clubsuit$-(1$\diamondsuit$)-1$\heartsuit$, for example, 1$\spadesuit$ is a range enquiry or transfer to $\clubsuit$. See \xref{sec:resp:1n} or \xref{sec:resp:2n}.
    \item Pass is a weak hand with nowhere to go (potentially including an 8--11 balanced hand with no stop).
 	\end{itemize}
 \end{itemize}
 
-\subsection{Direct interference over 1$\diamondsuit$}
+\subsubsection{Direct interference over 1$\diamondsuit$}
+\label{sec:intf:1d}
 
 \begin{itemize}
 \item 1$\diamondsuit$-(X):
@@ -864,7 +968,8 @@ Doubles of freely bid slams are Lightner, asking for the lead of dummy's first s
 	\end{itemize}
 \end{itemize}
 
-\subsection{Balancing-seat interference (e.g. 1$\diamondsuit$-(P)-1$\spadesuit$-(2$\clubsuit$))}
+\subsubsection{Balancing-seat interference (e.g. 1$\diamondsuit$-(P)-1$\spadesuit$-(2$\clubsuit$))}
+\label{sec:intf:bal}
 
 \begin{itemize}
 \item 1$\clubsuit$-(P)-1$\spadesuit$-(anything):
@@ -886,7 +991,8 @@ Doubles of freely bid slams are Lightner, asking for the lead of dummy's first s
 \item 1$\clubsuit$-(P)-1$\heartsuit$-(anything): passes are non-forcing. 
 \end{itemize}
 
-\subsection{Interference over a 2-level opening}
+\subsubsection{Interference over a 2-level opening}
+\label{sec:intf:2level}
 
 A few general principles here:
 
@@ -911,8 +1017,10 @@ A few general principles here:
 \end{itemize}
 
 \section{Carding}
+\label{sec:carding}
 
 \subsection{Leads}
+\label{sec:card:leads}
 
 Leads are standard (2nd from bad suits, 4th from an honour, top of sequences),
 except that they may vary based on signal requested (see below).
@@ -922,6 +1030,7 @@ The exception is that we lead top of bad suits against no trumps.
 After the initial lead we lead high from bad suits and low from good suits.
 
 \subsection{Signals}
+\label{sec:card:signals}
 
 We play two forms of signalling. On partner's lead we play reverse attitude
 (low encouraging, high discouraging), except if the initial lead was an odd
@@ -932,6 +1041,7 @@ obvious running suit in no trumps.
 Leads to ruffs and other obvious situations may be McKenny.
 
 \subsection{Discards}
+\label{sec:card:discards}
 
 Discards are Italian style, so an odd card is encouraging in the suit discarded
 and an even card is McKenny. Thus, low even cards ask for the lower of the
@@ -939,6 +1049,7 @@ outside suits and a high even card asks for the higher of the two outside
 suits.
 
 \subsection{Prism}
+\label{sec:card:prism}
 
 Prism is a signalling system based on the shape of the whole hand. An initial
 hand of 13 cards will, perforce, have either one suit which is odd (and three
