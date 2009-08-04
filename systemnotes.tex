@@ -176,7 +176,7 @@ vulnerabilities.
 	 & first or second seat non-vulnerable, possible canape with  \\
 	 & hearts, but 5+ spades if not holding 4+ hearts. \orange{11C14} \\
 	 & Other positions, or vulnerable, 5+ spades and 0--3 hearts.\\
-1$\spadesuit$  & 10--15 unbalanced, 5+ hearts, and 0--3 spades.\\
+1$\spadesuit$  & 10--15 unbalanced, 5+ hearts, and 0--3 spades. \orange{11C14}\\
 1NT & 9--11 balanced in first or second non-vulnerable \orange{11F3}; \\
 	 & otherwise 10--15 unbalanced with 4+ in both majors. \orange{11F5}\\
 \end{tabular}
@@ -282,6 +282,12 @@ Higher-level openings & natural. \\
 			\item After GF+ suit agreement with a 3-suiter, 3N by opener shows no wish to make
 				a slam try. Bidding the short suit shows a void and bidding a long suit shows
 				a significantly better suit.
+			\item After 1$\diamondsuit$-1$\spadesuit$ and showing suit(s) by opener, bidding 4$\clubsuit$/$\diamondsuit$
+				is swiss \xref{sec:swiss} agreeing openers most recently bid suit, bidding one of the other suits below 
+				game is slam inviting asking opener to bid swiss for that suit. Other available suits are first-round cues.
+			\item After 1$\diamondsuit$-1$\heartsuit$ and showing suit(s) by opener, bidding 4$\clubsuit$/$\diamondsuit$
+				is swiss \xref{sec:swiss} agreeing openers most recently bid suit, bidding one of the other suits below 
+				game is game inviting. Other available suits ask for a stop.
 			\end{itemize}
       \item Jump suit rebids are GF, single-suited.
       \item 2NT rebid = 20--23 balanced; see ``Continuations after 2NT" \xref{sec:resp:2n}.
@@ -440,7 +446,7 @@ Higher-level openings & natural. \\
 		\begin{itemize}
       \item 2NT = GF opening.
 		\end{itemize}
-   \item 3$\clubsuit$/$3\diamondsuit$ = non-forcing, $\clubsuit$/$\diamondsuit$-focused.
+   \item 3$\clubsuit$/3$\diamondsuit$ = non-forcing, $\clubsuit$/$\diamondsuit$-focused.
 		\begin{itemize}
 		\item Pass = minimum weak minors
       \item 3/4$\diamondsuit$ = maximum weak, better $\diamondsuit$.
@@ -477,8 +483,9 @@ Higher-level openings & natural. \\
 \item 2NT:
 	\begin{itemize}
    \item 3$\diamondsuit$/3$\spadesuit$ = simple preference
+   \item 4+$\diamondsuit$/4+$\spadesuit$ = preemptive raise
 		\begin{itemize}
-      \item After weak preference, any rebid shows GF hand.
+      \item After weak preference/raise, any rebid shows GF hand.
 		\end{itemize}
    \item 3$\clubsuit$/3$\heartsuit$ = transfer preference; stronger.
 		\begin{itemize}
@@ -537,7 +544,7 @@ depending on range.
 
 \begin{itemize}
 
-\item 2$\clubsuit$ is 5-card puppet Keri, which allows the system to be used with weak diamond hands with tolerance for at least one major (e.g. 4=0=6=3 pattern with very limited values).
+\item 2$\clubsuit$ is 5-card puppet Keri (see below), which allows the system to be used with weak diamond hands with either tolerance for the majors or playing in 3$\diamondsuit$. (e.g. 2=3=6=2 pattern with very limited values).
 
 \item 2$\diamondsuit$ and 2$\heartsuit$ are transfers; transfer breaks apply with any 4-card fit.  2NT
 shows 4/5-card support, no side 4-card suit, and a maximum.  Other suits
@@ -558,7 +565,8 @@ minimum, after which 3$\clubsuit$ is to play and other bids are GF, first round
 cues.  3$\clubsuit$ shows any maximum, and can be passed if 2$\spadesuit$ was
 weak takeout.
 
-\item 2NT is a transfer to diamonds; 3$\clubsuit$ is the only available super-accept.
+\item 2NT is a transfer to diamonds; 3$\clubsuit$ is the only available super-accept which 
+should be used with any 4 or honour-third.
 
 \item 3$\clubsuit$ promises a long suit that may need some help to run.  Opener should
 pass, or bid 3NT with (e.g.) Kxx in the suit.
@@ -785,9 +793,6 @@ and the king of the agreed suit. Responses are:
 \item 5$\spadesuit$: 2 or 5 key cards with the queen of trumps
 \end{itemize}
 
-Bids at the 5 level are exclusion blackwood. Responses are for keycards outside
-the suit bid, starting at the next bid.
-
 \subsection{Blackwood}
 \label{sec:blackwood}
 
@@ -802,6 +807,14 @@ for the four aces and has the following responses:
 
 5$\spadesuit$ is always available as a sign-off in 5N.
 
+\subsection{Exclusion Blackwood}
+\label{sec:exclusion}
+
+Unwarrented bids of an outside suit at the 5 level are Exclusion Blackwood.
+Responses are as whichever form of Blackwood would apply, but ignoring the ace
+in the suit bid. The next available suit shows 0 outside aces / keycards and
+bids procede from there.
+
 \subsection{King you have or king you don't}
 \label{sec:kyhokyd}
 
@@ -815,7 +828,10 @@ you are missing. With no kings bid 6 of the trump suit (or 5N if available).
 \subsection{First-round-control showing cues}
 \label{sec:cues}
 
-Once a suit is agreed and a GF is established, new suits are cues.
+Once a suit is agreed and a GF is established, new suits are cues showing an
+ace or a void in that suit. Unless otherwise agreed to be something else the
+bid of a suit a level above when it would be forcing for a round is a first round
+control showing cue agreeing the most recently shown suit.
 
 \subsection{General Swiss}
 \label{sec:swiss}
@@ -861,7 +877,7 @@ shown below 5 of the trump suit (usually diamonds over clubs) and asks partner
 to signoff appropriately whether they have duplication.
 
 If you find duplication in kings/singletons subtract one CP and sign off at the
-appropriate level. If your partner signs off and you have 2 unshown CPs so far,
+appropriate level. If your partner signs off and you have 2 as-yet unshown CPs,
 raise one level.
 
 If the hand bidding Swiss has shown a GF, add 2 to all numbers. If it has shown
@@ -925,7 +941,116 @@ For example:
 	\end{itemize}
 \end{itemize}
 
+If advancer has a strong hand then the following response structures apply:
 
+Any suit which overcaller could have at any level is to play opposite a weak
+hand and pass or correct. If responder has passed and overcalled has two known
+suits, then other two suits at the 3 level are strong raises in one of
+overcaller's suits; the cheaper outside suit for the cheaper known suit. These
+are invitational-plus if it is possible to stop below game in that suit and
+game forcing otherwise. 2NT and 3NT are both natural. The special case of
+(1$\clubsuit$)-2$\clubsuit$-(P)-2$\diamondsuit$ asks for the better of
+overcall's majors.
+
+After an invitational raise, overcaller bids the agreed suit at the 3 level
+with a minimum weak hand and bids game with a good weak hand. With a strong
+hand he bids swiss in that suit or does something else.
+
+For example:
+
+\begin{itemize}
+\item (1$\clubsuit$)-2$\clubsuit$-(P)
+	\begin{itemize}
+	\item 2$\diamondsuit$ - which is your better major
+	\item 2$\heartsuit$ - to play
+	\item 2$\spadesuit$ - to play
+	\item 2NT - natural, invitational
+	\item 3$\clubsuit$ - invitational with hearts
+	\item 3$\diamondsuit$ - invitational with spades
+	\item 3$\heartsuit$ - to play
+	\item 3$\spadesuit$ - to play
+	\item 3NT - to play
+	\end{itemize}
+\item (1$\heartsuit$)-2NT-(P)
+	\begin{itemize}
+	\item 3$\clubsuit$ - to play
+	\item 3$\diamondsuit$ - to play
+	\item 3$\heartsuit$ - invitational with clubs
+	\item 3$\spadesuit$ - invitational with diamonds
+	\item 3NT - to play
+	\end{itemize}
+\end{itemize}
+
+In the case where the two suits are not specified (responder still having
+		passed), then any suit which overcaller could have is pass or correct.
+2NT, if available (i.e. after Michaels), is an invitational-plus enquiry as to
+the other suit and re-cueing is a strong raise in the suit which has been
+promised. A direct 4$\clubsuit$/4$\diamondsuit$ if the promised suit is a major
+is Swiss~\xref{sec:swiss} for that suit and 3NT is to play. If 2NT is not
+available (i.e. after Unusual) then the re-cue is any stronger hand and
+responses are which other outside suit overcaller has.
+
+For example:
+
+\begin{itemize}
+\item (1$\heartsuit$)-2$\heartsuit$-(P)
+	\begin{itemize}
+	\item 2$\spadesuit$ - to play
+	\item 2NT - enquiry, invitational
+		\begin{itemize}
+		\item 3$\clubsuit$ - weak clubs and spades (responses = Swiss for clubs)
+		\item 3$\diamondsuit$ - weak diamonds and spades (responses = Swiss for diamonds)
+		\item 3$\heartsuit$ - strong clubs and spades
+		\item 3$\spadesuit$ - strong diamonds and spades
+		\end{itemize}
+	\item 3$\clubsuit$ - pass or correct
+	\item 3$\diamondsuit$ - pass or correct
+	\item 3$\heartsuit$ - invitational in spades
+	\item 3$\spadesuit$ - to play
+	\item 4$\clubsuit$ - Swiss for Spades
+	\item 4$\diamondsuit$ - Swiss for Spades
+	\item 3NT - to play
+	\end{itemize}
+\item (1$\clubsuit$)-2NT-(P)
+	\begin{itemize}
+	\item 3$\clubsuit$ - any invitational
+		\begin{itemize}
+		\item 3$\heartsuit$ - hearts and diamonds
+		\item 3$\spadesuit$ - spades and diamonds
+		\end{itemize}
+	\item 3$\diamondsuit$ - to play
+	\item 3$\heartsuit$ - pass or correct
+	\item 3$\spadesuit$ - pass or correct
+	\item 3NT - to play
+	\end{itemize}
+\end{itemize}
+
+If responder makes a raise of opener's suit (so, the sequences (1$\clubsuit$)-2$\clubsuit$-(3$\clubsuit$)
+or (1$\heartsuit$)-2NT-(3$\clubsuit$)) the structure is as follows: Double shows a strong raise of
+overcaller's known suit (if only one) or cheaper known suit (if two). If an outside suit other than the re-cue
+is available then that is a strong raise in the remaining suit(s) and the re-cue is a strong raise with no 
+preference, otherwise the re-cue is a strong raise in the remaining suit(s).
+
+For example:
+
+\begin{itemize}
+\item (1$\clubsuit$)-2$\clubsuit$-(3$\clubsuit$)
+	\begin{itemize}
+	\item X - invitational hearts
+	\item 3$\diamondsuit$ - invitational spades
+	\item 3NT - to play
+	\item 4$\clubsuit$ - GF, no preference
+	\end{itemize}
+\item (1$\clubsuit$)-2NT-(3$\clubsuit$)
+	\begin{itemize}
+	\item X - invitational diamonds
+	\item 3$\diamondsuit$ - to play
+	\item 3$\heartsuit$ - pass or correct
+	\item 3$\spadesuit$ - pass or correct
+	\item 3NT - to play
+	\item 4$\clubsuit$ - GF in either major
+	\end{itemize}
+\end{itemize}
 
 \subsection{Defences}
 \label{sec:defences}
@@ -1116,14 +1241,14 @@ A few general principles here:
 \begin{itemize}
 \item 2x-(X):
    \begin{itemize}
-      \item XX = forcing enquiry (even over further interference)
+      \item XX = forcing enquiry (even over further interference, starts a penalty auction)
       \item Pass = no desire to play opposite a weak hand
       \item Relay = some tolerence for the weak options
       \item Enquiries = forcing unless oppo bid
    \end{itemize}
 \item 2x-(2y):
    \begin{itemize}
-      \item X = optional (pass if it's your suit, pull otherwise)
+      \item X = optional (pass if it's your suit, pull otherwise, starts a penalty auction)
       \item \ldots
    \end{itemize}
 \item Opener's rebids facing passed responder:
