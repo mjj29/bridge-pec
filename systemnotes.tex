@@ -212,6 +212,10 @@ Asks for specific aces~\orange{11L1}.
 
 Will be bid with a hand missing at most two aces, or with a void. It must be happy playing at the six level opposite some responses and the seven level opposite some others.
 
+\paragraph{5 of a major}
+
+Shows an 11 trick hand missing two of the top three trump honours. Raise one level per trump honour.
+
 \newpage
 
 \subsection{Responses \& rebids}
@@ -231,6 +235,11 @@ Will be bid with a hand missing at most two aces, or with a void. It must be hap
    \item 1$\heartsuit$ = 10--15 any
 		\begin{itemize}
       \item 1$\spadesuit$ = any 10-11
+			\begin{itemize}
+			\item 1NT = balanced, no interest in game. Responses are weak takeout.
+			\item suits = natural, F1
+			\item 2N = balanced, 13-15. Responses see ``Continuations after 2NT" \xref{sec:resp:2n}
+			\end{itemize}
       \item 1NT = 12--15 balanced; see ``Continuations after 1NT" \xref{sec:resp:1n}.
       \item major suit bids 12-15 unbal and promise exactly 4; either 4-4-4-1
             with singleton other major or has a longer minor (as there's no other
@@ -615,6 +624,22 @@ pass, or bid 3NT with (e.g.) Kxx in the suit.
 
 \paragraph{Responses to 5-card puppet Keri}
 
+Because we may have already established a game-force before bidding 1NT and we
+use the principle of fast-arrival some of the ranges vary. In the responses
+below, min/max and invitational / GF are inverted if a game force has already
+been established, so:
+
+\begin{itemize}
+\item min $\rightarrow$ max
+\item max $\rightarrow$ min
+\item GF $\rightarrow$ denies slam interest
+\item invitational $\rightarrow$ slam try
+\end{itemize}
+
+Accepting slam-tries should generally be done by bidding
+4$\clubsuit$/4$\diamondsuit$ which are General Swiss~\xref{sec:swiss} where
+available. Either in a suit if one has been agreed or for no-trumps.
+
 	\begin{itemize}
 	\item 2$\heartsuit$/$\spadesuit$ with a 5-card major
 		\begin{itemize}
@@ -756,6 +781,7 @@ Lebensohl:
          \item 4$\heartsuit$ = with 4 hearts.
          \item 4$\spadesuit$ = with 4 spades.
 			\end{itemize}
+		\item 4$\clubsuit$/$\diamondsuit$ = Swiss \xref{sec:swiss} for no-trumps
 		\end{itemize}
    \item 3NT denies 4 hearts or 3 spades
 	\end{itemize}
@@ -945,8 +971,10 @@ direct raises are preemptive.
 Double is standard takeout (or a strong hand)~\orange{11N3}.
 
 Direct 1NT is 15-17 balanced with a stop or semi-balanced and may contain a
-singleton ace~\orange{11N8}, protective 1NT is 11-14 with a stop. 
-After these ``Continuations after 1NT''~\xref{sec:resp:1n} apply. 
+singleton ace~\orange{11N8}, protective 1NT is 11-14 with a stop.  After these
+``Continuations after 1NT''~\xref{sec:resp:1n} apply, with the exception that
+after the auction (1x)-1N-(2y), 2x is stayman without a stop if available.
+Other bids are lebensohl.
 
 Jump overcalls are weak, showing a 6 card suit and between 4HCP (favourable)
 and enough to make a simple overcall. In protective they are intermediate
@@ -1118,6 +1146,11 @@ Aside from defences to natural suit openings, these are mostly all based on suct
 \item spades: clubs or hearts and diamonds (or clubs)
 \end{itemize}
 
+The responses to these are not the same as the responses to a 2-level opening,
+but are more standard `pass or correct' responses. For example, after
+(1N)-2$\diamondsuit$-(P), 2$\spadesuit$ says pass with the blacks, invitational
+in hearts.
+
 \subsubsection{Natural 1NT}
 \label{sec:def:1n}
 
@@ -1206,10 +1239,21 @@ that suit. Big hands either pass then act or start with a double.
 
 Other overcalls are natural.
 
-\subsubsection{Lightner Doubles}
-\label{sec:def:lightner}
+\subsubsection{Definite two-suited preempts}
+
+Such as 2NT showing both minors. Double shows the other two suits and a direct
+cue bid asks for a stop in that suit, promises stops for any lower suits, but
+does not show or deny stops in any higher suits. With a stop partner bids 3N if
+he has a stop in all remaining higher suits, or the next suit he does not have
+a stop in.
+
+\subsubsection{Doubles}
+\label{sec:def:doubles}
 
 Doubles of freely bid slams are Lightner, asking for the lead of dummy's first shown suit.
+
+Doubles of other artificial bids are lead directing. If the doubler has already shown that
+suit then it asks for the lead of a different suit.
 
 \subsection{Dealing with interference}
 \label{sec:interference}
@@ -1244,7 +1288,7 @@ Doubles of freely bid slams are Lightner, asking for the lead of dummy's first s
 	\begin{itemize}
    \item Responder's double creates a game-force.
    \item 1NT promises a stop; 10--15 balanced. See ``Responses after 1NT'' \xref{sec:resp:1n}
-   \item Suit bids are natural, 10--15.
+   \item Suit bids are natural, 10--15. After a NT rebid by opener, 3$\clubsuit$ is checkback and normal system is off. 
    \item Exception: cheapest bid (or 2$\spadesuit$ over 1$\spadesuit$) shows a 12-15 balanced hand with no stop.  System is on, including Keri, transfers etc.  After 1$\clubsuit$-(1$\diamondsuit$)-1$\heartsuit$, for example, 1$\spadesuit$ is a range enquiry or transfer to $\clubsuit$. See \xref{sec:resp:1n} or \xref{sec:resp:2n}.
    \item Pass is a weak hand with nowhere to go (potentially including an 8--11 balanced hand with no stop).
 	\end{itemize}
@@ -1296,7 +1340,7 @@ Doubles of freely bid slams are Lightner, asking for the lead of dummy's first s
    \item Double is penalties.
 \end{itemize}
 
-\item 1$\clubsuit$-(P)-1$\diamondsuit$-(anything): it's a good idea to subside quietly.  
+\item 1$\clubsuit$-(P)-1$\diamondsuit$-(anything): it's a good idea to subside quietly, however, double is takeout below 2NT, penalties above.
 
 \item 1$\clubsuit$/$\diamondsuit$-(P)-1$\heartsuit$-(anything): passes are non-forcing, X is takeout / suction
 
@@ -1343,6 +1387,12 @@ A few general principles here:
    \begin{itemize}
    \item Suit from a weak option at the lowest level = decent weak option
    \item X/denied suit/NT = strong option (X is optional)
+   \end{itemize}
+\item 2x-(p)-relay-(X):
+   \begin{itemize}
+	\item Pass = weak single suiter
+	\item XX = weak 2 suiter
+	\item 2N = GF two suiter
    \end{itemize}
 \end{itemize}
 
