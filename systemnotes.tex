@@ -21,6 +21,18 @@
 \author{Matthew Johnson\\Henry Lockwood}
 \title{System notes on Pascal's Encrypted Club}
 
+\usepackage{ifthen}
+\usepackage{color}
+ 
+\newcommand{\newevenside}{
+	\ifthenelse{\isodd{\thepage}}{\newpage}{
+	\newpage
+	\textcolor{white}{placeholder} 
+	\thispagestyle{empty}
+	\newpage
+	}
+}
+
 \begin{document}
 
 \newcommand{\orange}[1]{[OB #1]}
@@ -89,7 +101,8 @@ in advance. Suggested defences are given in Appendix \ref{appx:defences}.
 \item establish strength first
 \item establish shape (balanced/unbalanced) second
 \item then find a contract
-\item single-suited hands are all 6+ cards and deny a side 4-card suit.
+\item single-suited hands are all 6+ cards and deny a side 4-card suit, although
+this may be bent with 4 small cards in a minor.
 \end{itemize}
 
 \subsection{Hand evaluation}
@@ -109,7 +122,7 @@ extended rule of 25 in all cases. \orange{10B5}
 In order to determine whether a hand is game forcing (for example to open a
 distributional hand 1$\diamondsuit$ or at the two level) we generally
 rely on losing trick count. Three or fewer losing tricks is enough to be game
-forcing, occasionally 4 if there are also 9 clear cut tricks. This is just a
+forcing, occasionally 4 if there are also 9 clear-cut tricks. This is just a
 guide, however, so might not strictly apply to all hands. The hands will meet
 the extended rule of 25 in all cases.
 
@@ -131,7 +144,7 @@ vulnerabilities.
 One of the following \orange{11C11}:
 
 \begin{itemize}
-\item 12--15 balanced (4333, 4432, 5332). May occasionally include some semi-balanced hands esp. 5422.
+\item (not 3\textsuperscript{rd} non-vul, events with 7+ boards/round) 12--15 balanced (4333, 4432, 5332). May occasionally include some semi-balanced hands esp. 5422.
 \item 10--15, not balanced, no 5-card major and at most one 4-card major
 \end{itemize}
 
@@ -144,7 +157,7 @@ One of the following \orange{11C11}:
 Varies depending upon position and vulnerability, but always 10--15 points, not
 balanced and promises 4 spades \orange{11C14}.
 
-First or second seat non-vulnerable (events with 7+ boards per round only):
+First, second or third seat non-vulnerable (events with 7+ boards per round only):
 \begin{itemize}
 \item 4+ spades, may be longer hearts but will always have 5 spades or 4 hearts
 \end{itemize}
@@ -153,6 +166,8 @@ All other positions and vulnerabilities:
 \begin{itemize}
 \item 5+ spades, 0-3 hearts
 \end{itemize}
+
+\newpage
 
 \paragraph{1$\spadesuit$}
 
@@ -167,10 +182,17 @@ First or second seat non-vulnerable (events with 7+ boards per round only):
 \item 9--11 balanced \orange{11F3}.
 \end{itemize}
 
+Third seat non-vulnerable (events with 7+ boards per round only):
+\begin{itemize}
+\item 9--15 balanced \orange{11F3}.
+\end{itemize}
+
 All other positions and vulnerabilities:
 \begin{itemize}
 \item 10--15 points, not balanced 4+ hearts, 4+ spades \orange{11F5}.
 \end{itemize}
+
+For responses see Sections~\xref{sec:resp:1nnat} and ~\xref{sec:resp:1nart}.
 
 \newpage 
 
@@ -206,6 +228,7 @@ One of the following \orange{11G10}:
 \paragraph{2$\spadesuit$}
 One of the following \orange{11G10}:
 \begin{itemize}
+\item Weak (5-9) with $\clubsuit$ (usually 7 cards)
 \item Weak (5-9) with $\heartsuit$ \& one of the minors, 4--4 or better (usually 5--4)
 \item Game forcing (3 losers) with $\heartsuit$ \& one of the minors, 4--4 or better (usually 5--4)
 \end{itemize}
@@ -225,27 +248,47 @@ Responses in Section \ref{sec:resp:higher}.
 
 \paragraph{3 level}
 
-Three level bids are natural, weak, preempts. Typically seven cards, they may
-be occasionally a good six (particularly at favourable vulnerability and in clubs) or a bad eight.
+Three level bids are transfer, weak, preempts. Typically seven cards, they may
+be occasionally a good six (particularly at favourable vulnerability) or a bad
+eight.
 
-\paragraph{Higher-level suit openings}
+\begin{itemize}
+\item 3$\clubsuit$ - 7 card preempt in diamonds \orange{11J8(a)}
+\item 3$\diamondsuit$ - 7 card preempt in hearts \orange{11J8(a)}
+\item 3$\heartsuit$ - 7 card preempt in spades \orange{11J8(a)}
+\end{itemize}
 
-Also natural, show a more distributional hand with a longer suit. Usually eight
-cards at the four level.
+\paragraph{3$\spadesuit$}
 
-\paragraph{3NT}
+Gambling 3NT~\orange{11J8(d)}. 
 
-Gambling 3NT~\orange{11K3}. 
-
-Shows a solid seven or eight card suit and nothing outside better than a queen.
-Solid in this case is defined as 60\% likely to run given all distributions of
-cards in the other hands. The following suits are all considered to be solid:
+Shows a solid seven or eight card minor suit and nothing outside better than a
+queen.  Solid in this case is defined as 60\% likely to run given all
+distributions of cards in the other hands. The following suits are all
+considered to be solid:
 
 \begin{itemize}
 \item AKQJxxx
 \item AKQxxxx
 \item AKxxxxxx
 \end{itemize}
+
+\paragraph{3NT}
+
+Shows a 4-level preempt in either minor~\orange{11K3(d)}. Usually eight cards. 
+
+\paragraph{4-level suit openings}
+
+We play Namyats, so:
+
+\begin{itemize}
+\item 4$\clubsuit$ - Strong 4-level bid in hearts~\orange{11L3}
+\item 4$\diamondsuit$ - Strong 4-level bid in spades~\orange{11L3}
+\item 4$\heartsuit$ - Purely preemptive 4-level bid in hearts
+\item 4$\spadesuit$ - Purely preemptive 4-level bid in spades
+\end{itemize}
+
+Strong is defined as an 8--9 playing trick hand.
 
 \paragraph{4NT}
 
@@ -257,8 +300,6 @@ Will be bid with a hand missing at most two aces, or with a void. It must be hap
 
 Shows an 11 trick hand missing two of the top three trump honours. Raise one level per trump honour.
 
-\newpage
-
 \subsection{Responses \& rebids}
 \label{sec:responses}
 
@@ -267,7 +308,60 @@ Shows an 11 trick hand missing two of the top three trump honours. Raise one lev
 
 \begin{itemize}
 \label{note:14}
-\item 1$\clubsuit$:
+\item 1$\clubsuit$ (3\textsuperscript{rd}/4\textsuperscript{th} Non-Vulnerable):
+	\begin{itemize}
+   \item 1$\diamondsuit$ = 0--5, no 6-card suit
+		\begin{itemize}
+      \item suits = unbalanced, possible canape
+      \item 1NT (3\textsuperscript{rd}) = 10--15, 5--4 minors
+      \item 1NT (4\textsuperscript{th}) = 12--15 balanced; responses weak takeout.
+		\end{itemize}
+   \item 1$\heartsuit$ = 6--8, no 6-card suit
+		\begin{itemize}
+      \item suits = unbalanced, possible canape
+      \item 1NT (3\textsuperscript{rd}) = 10--15, 5--4 minors
+      \item 1NT (4\textsuperscript{th}) = 12--15 balanced; responses weak takeout.
+		\end{itemize}
+   \item 1$\spadesuit$/1N/2x = two-under transfer weak jump shift 6+ card suit two-above
+		\begin{itemize}
+		\item Complete the transfer with nothing more to say
+		\item intervening bid = extras, 4+ support
+		\end{itemize}
+	\end{itemize}
+
+\newpage
+
+\item 1$\clubsuit$ (3\textsuperscript{rd}/4\textsuperscript{th} Vulnerable):
+	\begin{itemize}
+   \item 1$\diamondsuit$ = 0--8, no 6-card suit
+		\begin{itemize}
+      \item suits = unbalanced, possible canape
+      \item 1NT = 12--15 balanced; responses weak takeout.
+		\end{itemize}
+   \item 1$\heartsuit$ = 9-11
+		\begin{itemize}
+      \item 1$\spadesuit$ = any 10-11
+			\begin{itemize}
+			\item 1NT = balanced, no interest in game. Responses are weak takeout.
+			\item suits = natural, F1
+			\item 2N = balanced, 13-15. Responses see ``Continuations after 2NT" \xref{sec:resp:2n}
+			\end{itemize}
+      \item 1NT = 12--15 balanced; see ``Continuations after 1NT" \xref{sec:resp:1n}.
+      \item major suit bids 12-15 unbal and promise exactly 4; either 4-4-4-1
+            with singleton other major or has a longer minor (as there's no other
+            hand shape that fits the opening and has exactly one 4-card major)
+      \item minor suit bids deny a 4-card major and are 12-15 unbal.
+		\end{itemize}
+   \item 1$\spadesuit$/1N/2x = two-under transfer weak jump shift 6+ card suit two-above
+		\begin{itemize}
+		\item Complete the transfer with nothing more to say
+		\item intervening bid = extras, 4+ support
+		\end{itemize}
+	\end{itemize}
+
+\newpage
+
+\item 1$\clubsuit$ (1\textsuperscript{st}/2\textsuperscript{nd} Any vulnerability):
 	\begin{itemize}
    \item 1$\diamondsuit$ = 0--9, no 6-card suit
 		\begin{itemize}
@@ -362,6 +456,29 @@ Shows an 11 trick hand missing two of the top three trump honours. Raise one lev
 		\end{itemize}
 	\end{itemize}
 
+\item 1$\heartsuit$ (if denying $\heartsuit$):
+	\begin{itemize}
+\label{note:4}
+   \item 1$\spadesuit$/2$\spadesuit$/3$\spadesuit$/4$\spadesuit$ = to play/limit raises/to play.
+\label{note:5}
+   \item 1NT = 1-round force.
+   \item 2$\clubsuit$/$\diamondsuit$ = natural, forcing.
+   \item 2$\heartsuit$ = good raise, neither or both of $\spadesuit$ AK.
+		\begin{itemize}
+		\item Opener bids long suit trials below the trump suit
+		\item Cues or Swiss~\xref{sec:swiss} above the trump suit
+		\end{itemize}
+   \item 2NT = good raise, with exactly one of $\spadesuit$ AK \xref{sec:encryption}.
+		\begin{itemize}
+      \item Next bid shows 0/1 loser and the $\spadesuit$ K, or 2/3 losers and the SA.
+         Rebidding $\spadesuit$ denies the other top honour.
+		\end{itemize}
+   \item 3$\clubsuit$/3$\diamondsuit$ = fit jump.
+   \item 3$\heartsuit$/4$\clubsuit$/$\diamondsuit$ = splinter agreeing spades
+	\item 4$\heartsuit$ = to play
+	\end{itemize}
+
+\newpage
 
 \item 1$\heartsuit$ if not denying $\heartsuit$:
 	\begin{itemize}
@@ -395,29 +512,7 @@ Shows an 11 trick hand missing two of the top three trump honours. Raise one lev
 	\item 4$\heartsuit$ = to play
 	\end{itemize}
 
-
-\item 1$\heartsuit$ (if denying $\heartsuit$):
-	\begin{itemize}
-\label{note:4}
-   \item 1$\spadesuit$/2$\spadesuit$/3$\spadesuit$/4$\spadesuit$ = to play/limit raises/to play.
-\label{note:5}
-   \item 1NT = 1-round force.
-   \item 2$\clubsuit$/$\diamondsuit$ = natural, forcing.
-   \item 2$\heartsuit$ = good raise, neither or both of $\spadesuit$ AK.
-		\begin{itemize}
-		\item Opener bids long suit trials below the trump suit
-		\item Cues or Swiss~\xref{sec:swiss} above the trump suit
-		\end{itemize}
-   \item 2NT = good raise, with exactly one of $\spadesuit$ AK \xref{sec:encryption}.
-		\begin{itemize}
-      \item Next bid shows 0/1 loser and the $\spadesuit$ K, or 2/3 losers and the SA.
-         Rebidding $\spadesuit$ denies the other top honour.
-		\end{itemize}
-   \item 3$\clubsuit$/3$\diamondsuit$ = fit jump.
-   \item 3$\heartsuit$/4$\clubsuit$/$\diamondsuit$ = splinter agreeing spades
-	\item 4$\heartsuit$ = to play
-	\end{itemize}
-
+\newpage
 
 \item 1$\spadesuit$:
 	\begin{itemize}
@@ -439,7 +534,14 @@ Shows an 11 trick hand missing two of the top three trump honours. Raise one lev
    \item 4$\spadesuit$ = to play
 	\end{itemize}
 
-\newpage
+\subsubsection{Natural 1NT}
+\label{sec:resp:1nnat}
+
+If 1NT is natural not in third-seat non-vulnerable then the responses are
+detailed in the section ``Continuations after 1NT" \xref{sec:resp:1n}.
+
+In the case of the third-seat non-vulnerable 1NT showing 9--15 balanced
+the responses are weak takeout.
 
 \subsubsection{Artificial 1NT}
 \label{sec:resp:1nart}
@@ -555,14 +657,16 @@ Shows an 11 trick hand missing two of the top three trump honours. Raise one lev
 
 \item 2$\spadesuit$:
 	\begin{itemize}
-   \item 2NT = F1, which minor?
+   \item 2NT = Enquiry
 		\begin{itemize}
-      \item 3$\clubsuit$/$\diamondsuit$ = that minor
-      \item 3$\heartsuit$ = GF, $\heartsuit$\&$\clubsuit$
-      \item 3$\spadesuit$ = GF, $\heartsuit$\&$\diamondsuit$
+      \item 3$\clubsuit$ = weak with clubs
+      \item 3$\diamondsuit$ = weak with $\heartsuit$\&$\diamondsuit$
+      \item 3$\heartsuit$ = weak with $\heartsuit$\&$\clubsuit$
+      \item 3$\spadesuit$ = GF, $\heartsuit$\&$\clubsuit$
+      \item 3NT = GF, $\heartsuit$\&$\diamondsuit$
 		\end{itemize}
-   \item 3$\clubsuit$/$\diamondsuit$/$\heartsuit$, etc = to play (pass/correct if a minor).
-   \item 3$\spadesuit$ = setting $\heartsuit$, asking for information
+   \item 3$\clubsuit$/$\diamondsuit$/$\heartsuit$, etc = pass or correct
+   \item 3$\spadesuit$ = constructive but non-forcing with 5/6 spades
 	\end{itemize}
 
 \item 2NT:
@@ -585,19 +689,20 @@ Shows an 11 trick hand missing two of the top three trump honours. Raise one lev
 		\end{itemize}
 	\end{itemize}
 
-\newpage
-
 \subsubsection{Responses to higher opening bids}
 \label{sec:resp:higher}
 
-\item 3$\heartsuit$/$\spadesuit$:
+\item 3$\clubsuit$/$\diamondsuit$/$\heartsuit$:
 	\begin{itemize}
+	\item complete transfer = to play
 	\item 4$\clubsuit$/$\diamondsuit$ = General Swiss~\xref{sec:swiss}
 	\end{itemize}
 
-\item 3NT:
+\newpage
+
+\item 3$\spadesuit$:
 	\begin{itemize}
-	\item pass = stops in 3 suits
+	\item 3N = stops in 3 suits
 	\item clubs at any level = pass or correct
 	\item 4$\diamondsuit$ = asks for singletons
 		\begin{itemize}
@@ -605,6 +710,26 @@ Shows an 11 trick hand missing two of the top three trump honours. Raise one lev
 		\item 4N = no singletons
 		\item 5$\clubsuit$/$\diamondsuit$ = singleton in the other minor
 		\end{itemize}
+	\end{itemize}
+
+\item 3NT:
+	\begin{itemize}
+	\item clubs at any level = pass or correct
+	\item 4$\diamondsuit$ = enquiry
+		\begin{itemize}
+		\item 4$\heartsuit$ = clubs
+		\item 4$\spadesuit$ = diamonds
+		\end{itemize}
+	\end{itemize}
+
+\item 4$\clubsuit$/$\diamondsuit$:
+	\begin{itemize}
+	\item next-step = slam try with support
+		\begin{itemize}
+		\item complete transfer = decline
+		\item new suits = cues
+		\end{itemize}
+	\item completion = to play
 	\end{itemize}
 
 \item 4NT:
@@ -1638,12 +1763,13 @@ negative (0--7), 1$\heartsuit$ is positive distributional (8+), and 1$\spadesuit
 As for the system name: suction is measured in Pascals, and the system is
 encrypted.  It went from there.
 
-\newpage
+\newevenside
 
 % appendices below here
 \def\thesection{\Alph{section}}
 \setcounter{section}{0}
 
+\small
 \input{defences}
 
 \end{document}
