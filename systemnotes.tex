@@ -150,7 +150,7 @@ One of the following \orange{11C11}:
 
 \paragraph{1$\diamondsuit$}
 
-16+, not game forcing if balanced or a two-suiter \orange{11C12}. If balanced or semi-balanced then 16--23. If a two suiter (5422 or longer) or three suiter (4441 / 5440) then 16--21. If a single suiter (6332 or longer) then 16+.
+16+, not game forcing \orange{11C12}. If balanced or semi-balanced then 16--23. If a two suiter (5422 or longer) or three suiter (4441 / 5440) then 16--GF. If a single suiter (6332 or longer) then 16--GF. (16--GF here is 'less than a 3-loser hand').
 
 \paragraph{1$\heartsuit$}
 
@@ -258,14 +258,14 @@ Responses in Section \ref{sec:resp:higher}.
 
 \paragraph{3 level}
 
-Three level bids are transfer, weak, preempts. Typically seven cards, they may
-be occasionally a good six (particularly at favourable vulnerability) or a bad
-eight.
+Three level bids are transfers. Either weak preempts or a 3-loser hand.
+Typically seven cards, they may be occasionally a good six (particularly at
+favourable vulnerability) or a bad eight.
 
 \begin{itemize}
-\item 3$\clubsuit$ - 7 card preempt in diamonds \orange{11J8(a)}
-\item 3$\diamondsuit$ - 7 card preempt in hearts \orange{11J8(a)}
-\item 3$\heartsuit$ - 7 card preempt in spades \orange{11J8(a)}
+\item 3$\clubsuit$ - 7 card preempt or GF in diamonds \orange{11J8(a)}
+\item 3$\diamondsuit$ - 7 card preempt or GF in hearts \orange{11J8(a)}
+\item 3$\heartsuit$ - 7 card preempt or GF in spades \orange{11J8(a)}
 \end{itemize}
 
 \paragraph{3$\spadesuit$}
@@ -285,7 +285,8 @@ considered to be solid:
 
 \paragraph{3NT}
 
-Shows a 4-level preempt in either minor~\orange{11K3(d)}. Usually eight cards. 
+Shows a 4-level preempt in either minor or a 3 loser hand with
+clubs~\orange{11K3(d)}. Usually eight cards. 
 
 \paragraph{4-level suit openings}
 
@@ -702,7 +703,21 @@ weak takeout.
 
 \item 3$\clubsuit$/$\diamondsuit$/$\heartsuit$:
 	\begin{itemize}
-	\item complete transfer = to play
+	\item complete transfer (at any level) = to play
+		\begin{itemize}
+		\item 3N (if available) = GF option
+		\item Other slam tries (if available) = GF option
+		\end{itemize}
+	\item 3x = shortage ask
+		\begin{itemize}
+		\item 3N = no shortage, weak option
+		\item 4 level-completion = GF option
+		\item other suits = 0 or 1, weak option
+		\end{itemize}
+	\item 3N = to play
+		\begin{itemize}
+		\item slam tries = GF option
+		\end{itemize}
 	\item 4$\clubsuit$/$\diamondsuit$ = General Swiss~\xref{sec:swiss}
 	\end{itemize}
 
@@ -723,10 +738,16 @@ weak takeout.
 \item 3NT:
 	\begin{itemize}
 	\item clubs at any level = pass or correct
+		\begin{itemize}
+		\item Pass = weak clubs
+		\item Diamonds = weak diamonds
+		\item Others = GF clubs
+		\end{itemize}
 	\item 4$\diamondsuit$ = enquiry
 		\begin{itemize}
 		\item 4$\heartsuit$ = clubs
 		\item 4$\spadesuit$ = diamonds
+		\item 4NT = GF clubs
 		\end{itemize}
 	\end{itemize}
 
@@ -1131,7 +1152,7 @@ raise one level.
 If the hand bidding Swiss has shown a GF (opening a strong 2 level option,
 1$\diamondsuit$ and a jump rebid, or 1$\diamondsuit$ and a 2NT rebid), add 2 to
 all numbers. If it has shown a weak hand (opening a weak 2 or 3 level option or
-giving a 0--7 response to 1$\diamondsuit$), subtract 2 from all numbers.
+giving a 0--7 response to 1$\diamondsuit$ or opening 9-11 1NT), subtract 2 from all numbers.
 
 There is a small problem if you have 7 CPs and are agreeing hearts, since in
 that case, there is no available next step. In this case you may wish to show
