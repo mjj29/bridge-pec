@@ -219,6 +219,7 @@ One of the following \orange{11G10}:
 \begin{itemize}
 \item Weak (5-9) with $\diamondsuit$ (usually 6 cards)
 \item Weak (5-9) with $\heartsuit$ \& $\spadesuit$, 4--4 or better (usually 5--4)
+\item 20-23 balanced
 \item Game forcing (3 losers) with $\heartsuit$ \& $\spadesuit$, 4--4 or better (usually 5--4)
 \end{itemize}
 
@@ -422,31 +423,32 @@ Shows an 11 trick hand missing two of the top three trump honours. Raise one lev
 		\item Suit bids are natural
       \item 1NT rebid = 16--19 balanced; see ``Continuations after 1NT" \xref{sec:resp:1n}.
       \item Jump suit rebids are almost-GF, semi-solid single-suited.
-      \item 2NT rebid = 20--23 balanced; see ``Continuations after 2NT" \xref{sec:resp:2n}.
 		\end{itemize}
    \item 1$\spadesuit$ = 8+, game-forcing.
 		\begin{itemize}
       \item 1NT rebid = 16--19 balanced; see ``Continuations after 1NT" \xref{sec:resp:1n}.
-      \item Simple suit rebids are suction-style, showing either the suit above
+      \item simple rebids are suction-style, showing either the suit above
          (single-suited) or the other two, 16--21 HCP.
 			\begin{itemize}
 			\item $\clubsuit$ = diamonds or the majors
-			\item $\diamondsuit$ = hearts or spades and a minor
+			\item $\diamondsuit$ = hearts or spades and clubs
 			\item $\heartsuit$ = spades or the minors
-			\item $\spadesuit$ = clubs or hearts and a minor
+			\item $\spadesuit$ = clubs or hearts and diamonds
+			\item NT = non-touching two suiter
 			\end{itemize}
 		\item Could be 3-suited, short in the suit above. These are shown: 
 			\begin{itemize}
-         \item 2$\clubsuit$-2$\diamondsuit$-3$\clubsuit$: short diamonds.
-			\item 2$\diamondsuit$-2$\heartsuit$-2$\spadesuit$: short hearts. 
-			\item 2$\heartsuit$-2$\spadesuit$-3$\heartsuit$: short spades.
-         \item 2$\spadesuit$-3$\clubsuit$-3$\spadesuit$: short clubs.
+         \item 2$\clubsuit$-2$\diamondsuit$-3$\clubsuit$: short clubs.
+			\item 2$\diamondsuit$-2$\heartsuit$-2$\diamondsuit$: short diamonds. 
+			\item 2$\heartsuit$-2$\spadesuit$-3$\heartsuit$: short hearts.
+         \item 2$\spadesuit$-3$\clubsuit$-3$\spadesuit$: short spades.
 			\end{itemize}
 		\item Continuations:
 			\begin{itemize}
 			\item Responder will bid the next suit (relay). Opener then rebids 2NT with the
-				single-suited hand, a suit with the two/three-suited option or 3NT with
-				a 4/5 loser hand with a solid single suiter (top-range sub-game-force).
+				single-suited hand, the longer suit with the two-suited option or as above with
+				the three-suiter. After 2NT, 3C asks which option (longer suit or 3NT with longer clubs)
+				and other suits are swiss-or-correct below game or pass-or-correct above.
 			\item After GF+ suit agreement with a 3-suiter, 3N by opener shows no wish to make
 				a slam try. Bidding the short suit shows a void and bidding a long suit shows
 				a significantly better suit.
@@ -456,7 +458,6 @@ Shows an 11 trick hand missing two of the top three trump honours. Raise one lev
 				either wanting a stop or to find out openers' longer suit.
 			\end{itemize}
       \item Jump suit rebids are almost-GF, semi-solid single-suited.
-      \item 2NT rebid = 20--23 balanced; see ``Continuations after 2NT" \xref{sec:resp:2n}.
 		\end{itemize}
    \item 1N/2x = transfer weak jump shift 6+ card suit above, 0--7 or slam try
 		\begin{itemize}
@@ -581,10 +582,14 @@ weak takeout.
 	\begin{itemize}
    \item 2$\diamondsuit$ = pass/correct.
 		\begin{itemize}
-      \item 2NT = GF opening.
+      \item 2NT = 20--23 balanced; see ``Continuations after 2NT" \xref{sec:resp:2n}.
       \item 2$\heartsuit$ = weak majors.
 			\begin{itemize}
 			\item 2$\spadesuit$/3$\clubsuit$/3$\diamondsuit$ = to play
+			\end{itemize}
+		\item 3$\clubsuit$ = GF opening
+			\begin{itemize}
+			\item 3$\diamondsuit$ = which major is better
 			\end{itemize}
 		\end{itemize}
    \item 2$\heartsuit$/$\spadesuit$ = non-forcing; major-focused.
@@ -592,17 +597,23 @@ weak takeout.
 		\item Pass = minimum weak with both majors
 		\item 3$\heartsuit$ = maximum weak with better $\heartsuit$
 		\item 2/3$\spadesuit$ = maximum weak with better $\spadesuit$
-		\item 2NT = maximum weak both equal
+		\item 2NT = 20-23 balanced
 		\item 3$\diamondsuit$ = weak, diamonds.
 		\item 3$\clubsuit$ = GF opening
 		\end{itemize}
 	\item 2NT = F1, how good are your diamonds?
 		\begin{itemize}
 		\item 3$\clubsuit$ = GF opening
- 		\item 3$\diamondsuit$ = dire, single-suited
+ 		\item 3$\diamondsuit$ = bad diamonds
 		\item 3$\heartsuit$ = 2-suited
-		\item 3$\spadesuit$ = decent diamonds
-		\item 3NT = top-of-range diamonds
+		\item 3$\spadesuit$ = good diamonds
+		\item 3NT = 20-23 balanced
+			\begin{itemize}
+         \item 4$\clubsuit$/$\diamondsuit$ = 2 under transfers to $\heartsuit$/$\spadesuit$
+         \item 4$\heartsuit$/$\spadesuit$ = Swiss for no trumps \xref{sec:swiss}
+         \item 4N = Quantitative
+         \item 5N = Quantitative (for 6 or 7)
+			\end{itemize}
 		\end{itemize}
 	\item 3$\clubsuit$ = GF enquiry
 		\begin{itemize}
@@ -1083,15 +1094,15 @@ still of interest.
 \section{Slam conventions}
 \label{sec:slam}
 
-\subsection{Roman key-card Blackwood (3014)}
+\subsection{Roman key-card Blackwood (1430)}
 \label{sec:rkcb}
 
 4NT with an agreed suit is Roman key-card Blackwood. The key-cards are the four aces
 and the king of the agreed suit. Responses are:
 
 \begin{itemize}
-\item 5$\clubsuit$: 0 or 3 key cards
-\item 5$\diamondsuit$: 1 or 4 key cards
+\item 5$\clubsuit$: 1 or 4 key cards
+\item 5$\diamondsuit$: 0 or 3 key cards
 \item 5$\heartsuit$: 2 or 5 key cards without the queen of trumps
 \item 5$\spadesuit$: 2 or 5 key cards with the queen of trumps
 \end{itemize}
@@ -1812,6 +1823,53 @@ even numbers, four odd numbers or two of each.
 \item If partner's suit is in the even pair, then declarer's suit is the other one in that pair and the other parity.
 \item If partner's suit is in the odd pair, then declarer's suit is the other one in that pair and the same parity.
 \end{itemize}
+
+\section{Conventions not legal at EBU events}
+
+We have some extensions / alternatives which we play when allowed, but are {\bf
+not legal} in EBU tournaments. STES overcalls are brown sticker according to
+WBF rules and encrypted signals are not permitted at any level.
+
+\subsection{STES overcalls}
+
+STES overcalls are based on the suction construction used throughout this
+system.  The acronym stands for Suction Transfer Exclusion Suction and
+represents the meanings of each available suit, going up stepwise, so, the suit
+above is suction, the next suit is a transfer, the suit below shows the other
+two and the cue is suction.
+
+\begin{itemize}
+\item 1$\clubsuit$:
+	\begin{itemize}
+	\item 1$\diamondsuit$ = hearts or spades and diamonds
+	\item 1$\heartsuit$ = spades
+	\item 1$\spadesuit$ = diamonds and hearts
+	\item 2$\clubsuit$ = diamonds or hearts and spades
+	\end{itemize}
+\item 1$\diamondsuit$:
+	\begin{itemize}
+	\item 1$\diamondsuit$ = hearts or spades and diamonds
+	\item 1$\heartsuit$ = spades
+	\item 1$\spadesuit$ = diamonds and hearts
+	\item 2$\clubsuit$ = diamonds or hearts and spades
+	\end{itemize}
+\item 1$\heartsuit$:
+	\begin{itemize}
+	\item 1$\diamondsuit$ = hearts or spades and diamonds
+	\item 1$\heartsuit$ = spades
+	\item 1$\spadesuit$ = diamonds and hearts
+	\item 2$\clubsuit$ = diamonds or hearts and spades
+	\end{itemize}
+\item 1$\clubsuit$:
+	\begin{itemize}
+	\item 1$\diamondsuit$ = hearts or spades and diamonds
+	\item 1$\heartsuit$ = spades
+	\item 1$\spadesuit$ = diamonds and hearts
+	\item 2$\clubsuit$ = diamonds or hearts and spades
+	\end{itemize}
+\begin{itemize}
+
+\subsection{Encrypted carding}
 
 \newpage
 
