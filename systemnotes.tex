@@ -120,6 +120,10 @@ may be upgraded to a 1$\diamondsuit$ opening. Losing trick count is also
 useful for deciding when to upgrade. Upgraded hands will, obviously, meet the
 extended rule of 25 in all cases. \orange{10B5}
 
+Weak opening and overcalling hands have nominal point counts associated with
+them but are likely to be wider ranging in 3rd and weaker at favourable
+vulnerability.
+
 In order to determine whether a hand is game forcing (for example to open a
 distributional hand 1$\diamondsuit$ or at the two level) we generally
 rely on losing trick count. Three or fewer losing tricks is enough to be game
@@ -205,7 +209,7 @@ All other positions and vulnerabilities (7+ boards/round):
 \item 10--15 points, not balanced, 4+ hearts and 4+ spades \orange{11F5}.
 \end{itemize}
 
-For responses see Sections~\xref{sec:resp:1nnat} and ~\xref{sec:resp:1nart}.
+For responses see Sections~\ref{sec:resp:1nnat} and ~\ref{sec:resp:1nart}.
 
 \newpage 
 
@@ -1824,13 +1828,17 @@ even numbers, four odd numbers or two of each.
 \item If partner's suit is in the odd pair, then declarer's suit is the other one in that pair and the same parity.
 \end{itemize}
 
+\newpage
+
 \section{Conventions not legal at EBU events}
+\label{sec:illegal}
 
 We have some extensions / alternatives which we play when allowed, but are {\bf
 not legal} in EBU tournaments. STES overcalls are brown sticker according to
 WBF rules and encrypted signals are not permitted at any level.
 
 \subsection{STES overcalls}
+\label{sec:stes}
 
 STES overcalls are based on the suction construction used throughout this
 system.  The acronym stands for Suction Transfer Exclusion Suction and
@@ -1848,28 +1856,99 @@ two and the cue is suction.
 	\end{itemize}
 \item 1$\diamondsuit$:
 	\begin{itemize}
-	\item 1$\diamondsuit$ = hearts or spades and diamonds
-	\item 1$\heartsuit$ = spades
-	\item 1$\spadesuit$ = diamonds and hearts
-	\item 2$\clubsuit$ = diamonds or hearts and spades
+	\item 1$\heartsuit$ = spades or clubs and hearts
+	\item 1$\spadesuit$ = clubs
+	\item 2$\clubsuit$ = hearts and spades
+	\item 2$\diamondsuit$ = hearts or spades and clubs
 	\end{itemize}
 \item 1$\heartsuit$:
 	\begin{itemize}
-	\item 1$\diamondsuit$ = hearts or spades and diamonds
-	\item 1$\heartsuit$ = spades
-	\item 1$\spadesuit$ = diamonds and hearts
-	\item 2$\clubsuit$ = diamonds or hearts and spades
+	\item 1$\spadesuit$ = clubs or diamonds and spades
+	\item 2$\clubsuit$ = diamonds
+	\item 2$\diamondsuit$ = spades and diamonds
+	\item 2$\heartsuit$ = spades or clubs and diamonds
 	\end{itemize}
-\item 1$\clubsuit$:
+
+\newpage
+
+\item 1$\spadesuit$:
 	\begin{itemize}
-	\item 1$\diamondsuit$ = hearts or spades and diamonds
-	\item 1$\heartsuit$ = spades
-	\item 1$\spadesuit$ = diamonds and hearts
-	\item 2$\clubsuit$ = diamonds or hearts and spades
+	\item 2$\clubsuit$ = diamonds or hearts and clubs
+	\item 2$\diamondsuit$ = hearts
+	\item 2$\heartsuit$ = clubs and diamonds
+	\item 2$\spadesuit$ = clubs or diamonds and hearts
 	\end{itemize}
-\begin{itemize}
+\end{itemize}
+
+When permitted, we play a simple STES overcall as a standard overcall range,
+with double for three suits or a big hand. Jump overcalls are also STES, weak
+if single suited or strong if two suited and 2NT is any weak two suiter.
 
 \subsection{Encrypted carding}
+\label{sec:carding:encrypted}
+
+Section~\ref{sec:encryption} describes bidding systems where one side
+establish a key and can use that to pass information concealed from the
+opposition. It would be nice if this key was available to encode information
+during the defence, but this is unfortunately not permitted by the WBF or any
+regional authority. 
+
+There are a number of things which can be used as a key and a number of signals
+to which the key can be applied. Each key will be a binary key with a default state
+and an alternate state. Each signal will have a default mode and an alternate mode.
+
+\subsubsection{Keys}
+\label{sec:carding:encrypted:keys}
+
+Keys are listed in preference order - use the highest key which is valid. If
+there is no valid key then the default options apply.
+
+\begin{enumerate}
+
+\item Explicit key---If a key has been agreed during the
+auction~x\ref{sec:encryption} then use this. The Ace is the default key and the
+King is the alternate key.
+
+\item Declarer shown out---If declarer has shown out in a suit then defenders
+use parity in that suit as a key. Odd parity is the default key, even is the
+alternate.
+
+\item Declarer specified length---If during the auction declarer has shown a
+precise number of cards in a suit then defenders use parity in that suit as a
+key. Odd parity is the default key, even is the alternate.
+
+\end{enumerate}
+
+\subsubsection{Signals}
+\label{sec:carding:encrypted:signals}
+
+Each signal applies in a specific situation and has a default and alternate
+mode. Use the default mode if there is no key or the default key applies to
+you, use the alternate mode if the alternate key applies to you. Note that this
+means that one member of the partnership will be signalling one way and the
+other will be signalling the other way.
+
+\begin{itemize}
+
+\item Encrypted count---Signal standard count as the default option and reverse as the
+alternate. If the key is parity in another suit then signal with reverse count
+the sum of two suits.
+
+\item Encrypted attitude---Signal reverse attitude as the default option and standard as
+the alternate.
+
+\item Encrypted McKenny---The default option is normal McKenny (low card shows lower
+outside suit), the alternate option a low card shows the higher outside suit. Encrypted
+revolving discards apply similarly
+
+\item Sicilian---The default option is Italian, so odd cards are encouraging,
+even cards are McKenny, the alternate option is even cards encouraging, odd
+McKenny 
+
+\end{itemize}
+
+When permitted we play Sicilian discards, encrypted count signals except on the
+lead of an Ace or Queen, when we play encrypted attitude.
 
 \newpage
 
@@ -1897,27 +1976,34 @@ opener cannot have a 5+ card major suit without a longer minor.  This meant
 that we needed an opening-values 2$\clubsuit$ bid, and generally lost the point of the
 system.  We fell back upon a strong club structure.
 
-Given the strong $\clubsuit$ structure, we then looked at our other opening bids.  Our
-2-level openers are pre-emptive, and show either single-suiters or two-suiters.
-This is based upon the Suction convention: 2$\clubsuit$ shows $\diamondsuit$ or both majors, 2$\diamondsuit$ shows
-$\heartsuit$ or $\spadesuit$\&$\clubsuit$, 2$\heartsuit$ shows $\spadesuit$ or $\clubsuit$\&$\diamondsuit$, and 2$\spadesuit$ shows $\heartsuit$ and a minor.  We don't have a way
-to show a $\spadesuit$\&$\diamondsuit$ two-suiter; this is a likely future use for 2NT.
+Given the strong $\clubsuit$ structure, we then looked at our other opening
+bids.  Our 2-level openers are pre-emptive, and show either single-suiters or
+two-suiters.  This is based upon the Suction convention: 2$\clubsuit$ shows
+$\diamondsuit$ or both majors, 2$\diamondsuit$ shows $\heartsuit$ or
+$\spadesuit$\&$\clubsuit$, 2$\heartsuit$ shows $\spadesuit$ or
+$\clubsuit$\&$\diamondsuit$, and 2$\spadesuit$ shows $\heartsuit$ and a minor.
+We don't have a way to show a $\spadesuit$\&$\diamondsuit$ two-suiter; this is
+a likely future use for 2NT.
 
-Major suit openings are played as takeout bids.  This means that 1$\spadesuit$ promises 5+
-H and 0--3 $\spadesuit$, with 1$\heartsuit$ promising 5+ $\spadesuit$ and 0--3 $\heartsuit$.  These were, at one stage,
-4-card openings in the other major, but we found that this made bidding in
-competition too difficult.  In uncontested auctions, this has the great
-advantage that you gain a ``free" cue-bid: after a 1$\spadesuit$ opening, 2$\spadesuit$ shows a good
+Major suit openings are played as takeout bids.  This means that 1$\spadesuit$
+promises 5+ H and 0--3 $\spadesuit$, with 1$\heartsuit$ promising 5+
+$\spadesuit$ and 0--3 $\heartsuit$.  These were, at one stage, 4-card openings
+in the other major, but we found that this made bidding in competition too
+difficult.  In uncontested auctions, this has the great advantage that you gain
+a ``free" cue-bid: after a 1$\spadesuit$ opening, 2$\spadesuit$ shows a good
 raise of $\heartsuit$ while 2$\heartsuit$, 3$\heartsuit$ etc. are pre-emptive.
 
 The next implication is that we need a way to show hands with 4+ in both
-majors.  This falls to 1NT; we have 2$\clubsuit$/2$\diamondsuit$/2$\heartsuit$/2$\spadesuit$ as weak bids ``to play", and 2NT
-as a strong enquiry.  Bids in the major suits are primarily pre-emptive; 2NT
-asks for range and better major.  3m is strong and one-round forcing.
+majors.  This falls to 1NT; we have
+2$\clubsuit$/2$\diamondsuit$/2$\heartsuit$/2$\spadesuit$ as weak bids ``to
+play", and 2NT as a strong enquiry.  Bids in the major suits are primarily
+pre-emptive; 2NT asks for range and better major.  3m is strong and one-round
+forcing.
 
-1$\clubsuit$ includes balanced hands 16--19 and 23+ (we're using 2NT as a 20--22 balanced
-hand, for now).  The 1$\diamondsuit$ opening, therefore, has to cover all opening hands that
-do not fall into one of the above categories.  It therefore includes:
+1$\clubsuit$ includes balanced hands 16--19 and 23+ (we're using 2NT as a
+20--22 balanced hand, for now).  The 1$\diamondsuit$ opening, therefore, has to
+cover all opening hands that do not fall into one of the above categories.  It
+therefore includes:
 
 \begin{itemize}
 \item 12--15 balanced.
@@ -1925,9 +2011,10 @@ do not fall into one of the above categories.  It therefore includes:
       major.
 \end{itemize}
 
-Responses to 1$\diamondsuit$ are selected to allow the 1NT rebid, showing a weak NT opener,
-on all auctions.  Therefore: 1$\heartsuit$ = 0--7, 1$\spadesuit$ = 8+.  After interference, pass is
-weak; any other action promises 8+.
+Responses to 1$\diamondsuit$ are selected to allow the 1NT rebid, showing a
+weak NT opener, on all auctions.  Therefore: 1$\heartsuit$ = 0--7,
+1$\spadesuit$ = 8+.  After interference, pass is weak; any other action
+promises 8+.
 
 So that's our one-level openings.  For two-level openers, we wanted them to be
 the two-suited bids we'd originally considered for our one-level openings.  I
