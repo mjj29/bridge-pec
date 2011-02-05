@@ -10,7 +10,7 @@
 # make clean will tidy up
 #
 
-CARD?=level4_7boardrounds.pdf
+CARD?=level4.pdf
 
 all: systemnotes.pdf 
 
