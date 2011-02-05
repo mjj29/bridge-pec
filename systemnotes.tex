@@ -91,6 +91,11 @@ Conventions. Thus, it is not legal in Category 3 WBF events and in Category 2
 events the card with suggested defences and appropriate forms must be submitted
 in advance. Suggested defences are given in Appendix \ref{appx:defences}.
 
+\subsubsection{EBU Level 3 / WBF Category 3 variation}
+
+Modifications to the system to be permitted at both EBU Level 3 and WBF
+Category 3 events (as a Red system) are provided in Section \ref{level3}.
+
 \newpage
 
 \section{System description}
@@ -123,11 +128,12 @@ useful for deciding when to upgrade. Upgraded hands will, obviously, meet the
 extended rule of 25 in all cases. \orange{10B4}
 
 Weak opening and overcalling hands have nominal point counts associated with
-them but are likely to be wider ranging in 3rd and weaker at favourable
-vulnerability.
+them but are likely to be wider ranging in third and weaker at favourable
+vulnerability. Fourth seat openings which are weak in other seats will be 
+intermediate.
 
 In order to determine whether a hand is game forcing (for example to open a
-distributional hand 1$\diamondsuit$ or at the two level) we generally
+distributional hand at the two or three level) we generally
 rely on losing trick count. Three or fewer losing tricks is enough to be game
 forcing, occasionally 4 if there are also 9 clear-cut tricks. This is just a
 guide, however, so might not strictly apply to all hands. The hands will meet
@@ -159,7 +165,7 @@ One of the following \orange{11C11}:
 
 \paragraph{1$\diamondsuit$}
 
-16+, not game forcing \orange{11C12}. If balanced or semi-balanced then 16--23. If a two suiter (5422 or longer) or three suiter (4441 / 5440) then 16--GF. If a single suiter (6332 or longer) then 16--GF. (16--GF here is 'less than a 3-loser hand').
+16+, not game forcing \orange{11C12}. If balanced or semi-balanced then 16--19. If a two suiter (5422 or longer) or three suiter (4441 / 5440) then 16--GF. If a single suiter (6332 or longer) then 16--GF. (16--GF here is 'less than a 3-loser hand').
 
 \paragraph{1$\heartsuit$ (Level 5)}
 
@@ -183,12 +189,12 @@ balanced and promises 4 hearts \orange{11C15}.
 
 First, second or third seat non-vulnerable (events with 7+ boards per round only):
 \begin{itemize}
-\item 4+ hearts, may be longer spades or a minor (possible canape), but will always have 5 hearts or 4 spades.
+\item 4+ hearts, may be longer a minor (possible canape), but will always have 5 hearts or 4 spades.
 \end{itemize}
 
 All other positions and vulnerabilities:
 \begin{itemize}
-\item 5+ hearts, 0-3 spades, may contain a longer minor (possible canape).
+\item 5+ hearts, may contain a longer minor (possible canape).
 \end{itemize}
 
 
@@ -199,7 +205,7 @@ All other positions and vulnerabilities:
 
 \paragraph{1$\spadesuit$ (Level 4)}
 
-10--15 points, not balanced. 5+ spades, 0-3 hearts \orange{11C15}, may have a longer minor (possible canape).
+10--15 points, not balanced. 5+ spades \orange{11C15}, may have a longer minor (possible canape).
 
 \paragraph{1NT}
 
@@ -937,9 +943,9 @@ pass, or bid 3NT with (e.g.) Kxx in the suit.
 	\item 4m = General Swiss \xref{sec:swiss}
 	\end{itemize}
 
-\item 4$\clubsuit$/4$\diamondsuit$ are General Swiss \xref{sec:swiss}.
+\item 4$\clubsuit$ is Roman Key-Quant Gerber \xref{sec:rkqg}.
 
-\item 4N is Blackwood \xref{sec:blackwood}.
+\item 4N is Viscount \xref{sec:viscount}.
 
 \end{itemize}
 
@@ -1123,14 +1129,16 @@ superaccept that still allows the use of Swiss.
    \item 4$\heartsuit$/4$\spadesuit$ = 5 cards in the corresponding minor.
 	\end{itemize}
 
-\item 4$\clubsuit$/$\diamondsuit$: Swiss \xref{sec:swiss}
-\item 4N: Quantitative
+\item 4$\clubsuit$ is Roman Key-Quant Gerber \xref{sec:rkqg}.
+\item 4N is Viscount \xref{sec:viscount}.
 \end{itemize}
 
 \newpage
 
 \section{Encrypted bidding}
 \label{sec:encryption}
+
+Note: currently this is inactive, since we have dropped key agreement from the system.
 
 Once responder makes an encrypted raise, opener can either accept or decline
 the key.  To decline, simply rebid the suit (cheaply with a minimum; jump if
@@ -1288,6 +1296,29 @@ After interference direct after a non-signoff response to Swiss:
 	\item X or XX = a second-round control in that suit
 	\item Suits = a second-round control in that suit
 \end{itemize}
+
+\subsection{Roman Key-Quant Gerber}
+\label{sec:rkqg}
+
+After a NT opening or rebid, 4$\clubsuit$ is Roman Key-Quant Gerber, asking for
+aces and quantatitive. Responses are:
+
+\begin{itemize}
+	\item 4$\diamondsuit$ = 0 or 3 aces
+	\item 4$\heartsuit$ = 1 or 4 aces
+	\item 4$\spadesuit$ = 2 aces and denying a quant raise
+	\item 4NT = 2 aces and accepting the quant raise
+\end{itemize}
+
+After 4$\diamondsuit$/$\heartsuit$, next step asks for quant, with 4NT denying
+and bidding kings or 6NT accepting.
+
+\subsection{Viscount}
+\label{sec:viscount}
+
+Since all the quantatitive raises and ace asking go through Gerber (above), 4NT
+is now free. Bidding 4NT over a NT opening or rebid asks opener to bid 4 card
+suits up the line. It's very much like the Baron convention, only higher.
 
 \newpage
 
@@ -1901,6 +1932,77 @@ even numbers, four odd numbers or two of each.
 \item If partner's suit is in the even pair, then declarer's suit is the other one in that pair and the other parity.
 \item If partner's suit is in the odd pair, then declarer's suit is the other one in that pair and the same parity.
 \end{itemize}
+
+\newpage
+
+\section{Conventions for lower-level events}
+\label{sec:level3}
+
+Sometimes it is neccessary to play at EBU level 3 or WBF category 3 events. In
+those cases, it is not permitted to play the system as described above. The
+treatments restricted at lower levels are the two and three level openings, 
+although this also has minor differences to other bids.
+
+\subsection{1 diamond}
+
+The strong diamond opening must include GF single suiters. After opening
+1$\diamondsuit$, which is now forcing, jump rebids show GF single suited hands.
+
+\subsection{Two level openings}
+
+\begin{itemize}
+\item 2$\clubsuit$ = 5-10HCP, 4+ hearts, 4+ spades
+	\begin{itemize}
+	\item 2$\diamondsuit$ = enquiry as to strength and better major
+	\item either major at any level = to play
+	\end{itemize}
+\item 2$\diamondsuit$ = One of: 6+ weak major OR 21-24 bal OR 2-suited GF not $\spadesuit$+$\diamondsuit$
+	\begin{itemize}
+	\item 2$\heartsuit$ = pass or correct
+		\begin{itemize}
+		\item pass = weak hearts
+		\item 2$\spadesuit$ = weak spades
+		\item 2NT = balanced
+		\item 3$\clubsuit$ = GF minors
+		\item 3$\diamondsuit$ = GF reds
+		\item 3$\heartsuit$ = GF majors
+		\item 3$\spadesuit$ = GF blacks
+		\item 3NT = GF rounds
+		\end{itemize}
+	\item 2NT = enquiry
+		\begin{itemize}
+		\item 3$\clubsuit$ = bad weak hearts
+		\item 3$\diamondsuit$ = bad weak spades
+		\item 3$\heartsuit$ = good weak hearts
+		\item 3$\spadesuit$ = good weak spades
+		\item 3NT = balanced
+		\item 4$\clubsuit$ = GF minors
+		\item 4$\diamondsuit$ = GF reds
+		\item 4$\heartsuit$ = GF majors
+		\item 4$\spadesuit$ = GF blacks
+		\item 4NT = GF rounds
+		\end{itemize}
+	\end{itemize}
+\item 2$\heartsuit$ = 5-10HCP, 5+ hearts, 4+ minor
+	\begin{itemize}
+	\item 2NT = enquiry for minor and strength
+	\item either minor at any level = paradox 
+	\end{itemize}
+\item 2$\spadesuit$ = 5-10HCP, 5+ hearts, 4+ minor
+	\begin{itemize}
+	\item 2NT = enquiry for minor and strength
+	\item either minor at any level = paradox 
+	\end{itemize}
+\item 2NT = GF pointeds or 25+ balanced
+	\begin{itemize}
+	\item transfer preference
+	\end{itemize}
+\end{itemize}
+
+\subsection{Three level openings}
+
+Three level bids must be natural, not transfers, so all the three level suit
+openings are natural and weak. 3NT is gambling.
 
 \newpage
 
