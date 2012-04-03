@@ -1,0 +1,25 @@
+
+\usepackage{ifthen}
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{txfonts}
+ 
+\newcommand{\newevenside}{
+	\ifthenelse{\isodd{\thepage}}{\newpage}{
+	\newpage
+	\textcolor{white}{placeholder} 
+	\thispagestyle{empty}
+	\newpage
+	}
+}
+
+
+\newcommand{\orange}[1]{[OB #1]}
+\newcommand{\xref}[1]{[\ref{#1}]}
+
+\newcommand{\hearts}{\textcolor{Red}{$\varheartsuit$}~}
+\newcommand{\diamonds}{\textcolor{Red}{$\vardiamondsuit$}~}
+\newcommand{\spades}{$\spadesuit$~}
+\newcommand{\clubs}{$\clubsuit$~}
+
+
