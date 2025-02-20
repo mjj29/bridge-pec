@@ -22,8 +22,11 @@ jobs:
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
-          name: systemnotes-pdf
-          path: systemnotes.pdf
+          name: system-pdfs
+          path: | 
+            systemnotes.pdf
+            openinglist.pdf
+            prepareddefences.pdf
 
 #      - name: Deploy PDF to GitHub Pages
 #        run: |
