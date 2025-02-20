@@ -14,7 +14,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install LaTeX
-        run: sudo apt-get update && sudo apt-get install -y texlive-full
+        run: sudo apt-get update && sudo apt-get install -y texlive-full pandoc
 
       - name: Build PDF
         run: make
@@ -28,14 +28,25 @@ jobs:
             openinglist.pdf
             prepareddefences.pdf
 
-#      - name: Deploy PDF to GitHub Pages
-#        run: |
-#          git config --global user.name "github-actions[bot]"
-#          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-#          git checkout --orphan gh-pages
-#          git rm -rf .
-#          mv systemnotes.pdf index.pdf
-#          git add index.pdf
-#          git commit -m "Update PDF"
-#          git push --force origin gh-pages
+      - name: Checkout gh-pages branch
+        run: |
+          git fetch origin gh-pages || git checkout --orphan gh-pages
+          git checkout gh-pages
+
+      - name: Keep existing files
+        run: |
+          git reset --soft origin/gh-pages
+          git add systemnotes.pdf prepareddefences.pdf openinglist.pdf  # Add new files
+          git add level4.pdf level5.pdf README.md  # Preserve existing files
+
+      - name: Convert README.md to index.html
+        run: |
+          pandoc README.md -o index.html
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update PDFs and index page" || echo "No changes to commit"
+          git push --force origin gh-pages
 
