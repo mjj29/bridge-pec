@@ -1,0 +1,38 @@
+name: Build and Publish PDF
+
+on:
+  push:
+    branches:
+      - main  # Change this if your default branch is different
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install LaTeX
+        run: sudo apt-get update && sudo apt-get install -y texlive-full
+
+      - name: Build PDF
+        run: make
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: systemnotes-pdf
+          path: systemnotes.pdf
+
+#      - name: Deploy PDF to GitHub Pages
+#        run: |
+#          git config --global user.name "github-actions[bot]"
+#          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+#          git checkout --orphan gh-pages
+#          git rm -rf .
+#          mv systemnotes.pdf index.pdf
+#          git add index.pdf
+#          git commit -m "Update PDF"
+#          git push --force origin gh-pages
+
