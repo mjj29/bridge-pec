@@ -3,7 +3,7 @@ name: Build and Publish PDF
 on:
   push:
     branches:
-      - main  # Change this if your default branch is different
+      - master
 
 jobs:
   build:
