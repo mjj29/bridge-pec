@@ -12,7 +12,7 @@
 
 CARD?=level4.pdf
 
-all: systemnotes.pdf 
+all: systemnotes.pdf openinglist.pdf prepareddefences.pdf
 
 clean:
 	rm -f *.lof *.out *.toc *.aux *.log systemnotes.pdf blank.pdf systemnotes-book.pdf temp* log card.pdf *.2up.pdf prepareddefences.pdf systemnotes-bookalt.pdf
