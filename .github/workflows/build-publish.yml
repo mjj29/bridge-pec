@@ -32,17 +32,15 @@ jobs:
 #        run: |
 #          pandoc README.md -o index.html
 #
-      - name: Copy pages files
-        run: mkdir -p doc && cp README.md level4.pdf level5.pdf doc/
+      - name: Setup gh-pages
+        run: |
+          git fetch origin
+          git checkout --orphan gh-pages
+          git reset --soft origin/gh-pages
+          git add level4.pdf level5.pdf README.md
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update PDFs and index page" || echo "No changes to commit"
+          git push --force origin gh-pages
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v3
-
-      - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: doc
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
 
