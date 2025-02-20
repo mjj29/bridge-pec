@@ -13,34 +13,34 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-#      - name: Install LaTeX
-#        run: sudo apt-get update && sudo apt-get install -y texlive-full pandoc
+      - name: Install LaTeX
+        run: sudo apt-get update && sudo apt-get install -y texlive-full pandoc
 
-#      - name: Build PDF
-#        run: make
+      - name: Build PDF
+        run: make
 
-#      - name: Upload PDF artifact
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: system-pdfs
-#          path: | 
-#            systemnotes.pdf
-#            openinglist.pdf
-#            prepareddefences.pdf
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: system-pdfs
+          path: | 
+            systemnotes.pdf
+            openinglist.pdf
+            prepareddefences.pdf
 
 #      - name: Convert README.md to index.html
 #        run: |
 #          pandoc README.md -o index.html
 #
-      - name: Setup gh-pages
-        run: |
-          git fetch origin
-          git checkout --orphan gh-pages
-          git reset --soft origin/gh-pages
-          git add level4.pdf level5.pdf README.md
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update PDFs and index page" || echo "No changes to commit"
-          git push --force origin gh-pages
+#      - name: Setup gh-pages
+#       run: |
+#         git fetch origin
+#         git checkout --orphan gh-pages
+#         git reset --soft origin/gh-pages
+#         git add level4.pdf level5.pdf README.md
+#         git config --global user.name "github-actions[bot]"
+#         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+#         git commit -m "Update PDFs and index page" || echo "No changes to commit"
+#         git push --force origin gh-pages
 
 
