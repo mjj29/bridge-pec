@@ -13,40 +13,35 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install LaTeX
-        run: sudo apt-get update && sudo apt-get install -y texlive-full pandoc
+#      - name: Install LaTeX
+#        run: sudo apt-get update && sudo apt-get install -y texlive-full pandoc
 
-      - name: Build PDF
-        run: make
+#      - name: Build PDF
+#        run: make
 
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: system-pdfs
-          path: | 
-            systemnotes.pdf
-            openinglist.pdf
-            prepareddefences.pdf
-
-      - name: Checkout gh-pages branch
-        run: |
-          git fetch origin gh-pages || git checkout --orphan gh-pages
-          git checkout gh-pages
-
-      - name: Keep existing files
-        run: |
-          git reset --soft origin/gh-pages
-          git add systemnotes.pdf prepareddefences.pdf openinglist.pdf  # Add new files
-          git add level4.pdf level5.pdf README.md  # Preserve existing files
+#      - name: Upload PDF artifact
+#        uses: actions/upload-artifact@v4
+#        with:
+#          name: system-pdfs
+#          path: | 
+#            systemnotes.pdf
+#            openinglist.pdf
+#            prepareddefences.pdf
 
       - name: Convert README.md to index.html
         run: |
           pandoc README.md -o index.html
 
-      - name: Commit and Push
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update PDFs and index page" || echo "No changes to commit"
-          git push --force origin gh-pages
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v3
 
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: |
+            index.html
+            level4.pdf
+            level5.pdf
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
