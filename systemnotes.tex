@@ -200,8 +200,11 @@ the extended rule of 25 in all cases.
 	\begin{itemize}
    \item 1\diamonds = 0--8, no 6-card suit
 		\begin{itemize}
-      \item suits = unbalanced, possible canape
       \item 1NT = 11--13 (vul) 12--15 (non-vul) balanced; responses weak takeout.
+      \item Major suit bids 12-15 unbal and promise exactly 4; either 4-4-4-1
+            with singleton other major or has a longer minor (as there's no other
+            hand shape that fits the opening and has exactly one 4-card major)
+      \item Minor suit bids deny a 4-card major.
 		\end{itemize}
    \item 1\hearts = 9--15 any
 		\begin{itemize}
@@ -212,10 +215,7 @@ the extended rule of 25 in all cases.
 			\item 2N = balanced, 13-15. Responses see ``Continuations after 2NT" \xref{sec:resp:2n}
 			\end{itemize}
       \item 1NT = 12--13 (vul) 12--15 (non-vul) balanced. Responses see ``Continuations after 1NT" \xref{sec:resp:1n}.
-      \item Major suit bids 12-15 unbal and promise exactly 4; either 4-4-4-1
-            with singleton other major or has a longer minor (as there's no other
-            hand shape that fits the opening and has exactly one 4-card major)
-      \item Minor suit bids deny a 4-card major and are 12-15 unbal.
+      \item Suits = natural, NF, not canape
 		\end{itemize}
    \item 1\spades = 15+ any, game-forcing.
 		\begin{itemize}
@@ -223,6 +223,9 @@ the extended rule of 25 in all cases.
          major or has a longer minor (as there's no other hand shape that fits the
          opening and has exactly one 4-card major)
       \item 1NT = 11--13 (vul) 12--15 (non-vul) balanced. Responses see ``Continuations after 1NT" \xref{sec:resp:1n}.
+      \item Major suit bids 12-15 unbal and promise exactly 4; either 4-4-4-1
+            with singleton other major or has a longer minor (as there's no other
+            hand shape that fits the opening and has exactly one 4-card major)
       \item Minor suit bids deny a 4-card major.
 		\end{itemize}
    \item 1N/2x = transfer jump shift 6+ card suit above, 0--8 or slam try
@@ -291,28 +294,6 @@ the extended rule of 25 in all cases.
 		\item jump new suit = nearly-GF single suiter
 		\end{itemize}
 	\end{itemize}
-
-%\item 1\hearts (if denying \hearts, Level 5):
-%	\begin{itemize}
-%\label{note:4}
-%   \item 1\spades/2\spades/3\spades/4\spades = to play/limit raises/to play.
-%\label{note:5}
-%   \item 1NT = 1-round force.
-%   \item 2\clubs/\diamonds = natural, forcing.
-%   \item 2\hearts = good raise, neither or both of \spades AK.
-%		\begin{itemize}
-%		\item Opener bids long suit trials below the trump suit
-%		\item Cues or Swiss~\xref{sec:swiss} above the trump suit
-%%		\end{itemize}
-%   \item 2NT = good raise, with exactly one of \spades AK \xref{sec:encryption}.
-%		\begin{itemize}
-%      \item Next bid shows 0/1 loser and the \spades K, or 2/3 losers and the SA.
-%         Rebidding \spades denies the other top honour.
-%		\end{itemize}
-%   \item 3\clubs/3\diamonds = fit jump.
-%   \item 3\hearts/4\clubs/\diamonds = splinter agreeing spades
-%	\item 4\hearts = to play
-%	\end{itemize}
 
 {\it 
 \item 1\hearts (Level 5):
@@ -418,7 +399,7 @@ If 1NT is natural and not in 3rd/4th non-vulnerable then the responses are
 detailed in the section ``Continuations after 1NT" \xref{sec:resp:1n}.
 
 In the case of the third- or fourth-seat non-vulnerable 1NT the responses are
-weak takeout.
+weak takeout and should be announced "natural, non-forcing" \orange{4E5}.
 
 \subsubsection{Artificial 1NT}
 \label{sec:resp:1nart}
@@ -444,25 +425,24 @@ weak takeout.
 \item 2\clubs:
 	\begin{itemize}
    \item 2\diamonds = pass/correct.
-		\begin{itemize}
+			\begin{itemize}
+		\item Pass = weak diamonds
       \item 2NT = 20--23 balanced; see ``Continuations after 2NT" \xref{sec:resp:2n}.
       \item 2\hearts = weak majors.
 			\begin{itemize}
 			\item 2\spades/3\clubs/3\diamonds = to play
 			\end{itemize}
-		\item 3\clubs = GF opening
-			\begin{itemize}
-			\item 3\diamonds = which major is better
-			\end{itemize}
+		\item 2\spades = GF opening better spades
+		\item 3\clubs = GF opening better hearts
 		\end{itemize}
    \item 2\hearts/\spades = non-forcing; major-focused.
 		\begin{itemize}
 		\item Pass = minimum weak with both majors
-		\item 3\hearts = maximum weak with better \hearts
-		\item 2/3\spades = maximum weak with better \spades
 		\item 2NT = 20-23 balanced
-		\item 3\diamonds = weak, diamonds.
 		\item 3\clubs = GF opening
+		\item 3\diamonds = weak, diamonds.
+		\item 3\hearts = maximum weak with better \hearts
+		\item 3\spades = maximum weak with better \spades
 		\end{itemize}
 	\item 2NT = F1, how good are your diamonds?
 		\begin{itemize}
@@ -483,6 +463,7 @@ weak takeout.
 		\item 3\diamonds = weak, diamonds
 		\item 3\hearts = weak, majors, better hearts
 		\item 3\spades = weak, majors, better spades
+		\item 3N = weak, majors, balanced-ish
 		\end{itemize}
 
 	\end{itemize}
@@ -493,30 +474,37 @@ weak takeout.
 	\begin{itemize}
    \item 2\hearts = pass/correct.
 		\begin{itemize}
-      \item 2NT = GF opening.
+		\item Pass = weak hearts
       \item 2\spades = weak blacks.
 			\begin{itemize}
 			\item 3\clubs/3\diamonds/3\hearts = to play
 			\end{itemize}
+      \item 2N = GF better spades.
+      \item 3\clubs = GF better clubs.
 		\end{itemize}
    \item 2\spades/3\clubs = non-forcing, \clubs/\spades-focused.
 		\begin{itemize}
 		\item Pass = minimum weak \clubs/\spades
-      \item 2/3NT = maximum weak, both equal.
-      \item 3/4\clubs = maximum weak, better \clubs.
       \item 3\diamonds = GF opening.
-      \item 3\hearts = weak with \hearts
-      \item 3\spades = maximum weak, better \spades.
+      \item 3\hearts = weak hearts.
+		\item 3\spades = max better spades
+		\item 3N = max better clubs
 		\end{itemize}
    \item 2NT = F1, how good are your hearts?
 		\begin{itemize}
       \item 3\clubs = two-suited.
-      \item 3\diamonds = dire, single-suited.
-      \item 3\hearts = good, single-suited, points spread.
-      \item 3\spades = GF opening.
+      \item 3\diamonds = GF two-suited.
+      \item 3\hearts = bad hearts.
+      \item 3\spades = good hearts.
       \item 3NT = good, single-suited, running suit
 		\end{itemize}
 	\item 3\diamonds = GF enquiry
+		\begin{itemize}
+		\item 3\hearts = weak, hearts
+		\item 3\spades = weak, blacks, better spades
+		\item 3N = weak, blacks, balanced-ish
+		\item 3\clubs = weak, blacks, better clubs
+		\end{itemize}
 	\end{itemize}
 
 \newpage
@@ -525,20 +513,22 @@ weak takeout.
 	\begin{itemize}
    \item 2\spades = pass/correct.
 		\begin{itemize}
-      \item 2NT = GF opening.
+	   \item Pass = weak spades
+      \item 2NT = GF better clubs
       \item 3\clubs = weak minors.
 			\begin{itemize}
 			\item 3\diamonds/3\hearts/\spades = to play
 			\end{itemize}
 		\end{itemize}
+      \item 3\diamonds = GF better diamonds
    \item 3\clubs/3\diamonds = non-forcing, \clubs/\diamonds-focused.
 		\begin{itemize}
 		\item Pass = minimum weak minors
-      \item 3/4\diamonds = maximum weak, better \diamonds.
       \item 3\hearts = GF opening.
       \item 3\spades = single-suited.
       \item 3NT = maximum weak minors, both equal.
       \item 4\clubs = maximum weak, better \clubs.
+      \item 4\diamonds = maximum weak, better \diamonds.
 		\end{itemize}
    \item 2NT = F1, how good are your spades?
 		\begin{itemize}
@@ -549,6 +539,12 @@ weak takeout.
       \item 3NT = good, single-suited, running suit.
 		\end{itemize}
 	\item 3\hearts = GF enquiry
+		\begin{itemize}
+		\item 3\spades = weak, spades
+		\item 3N = weak, minors, balanced-ish
+		\item 3\clubs = weak, minors, better clubs
+		\item 3\diamonds = weak, minors, better diamonds
+		\end{itemize}
 	\end{itemize}
 
 \newpage
@@ -557,7 +553,7 @@ weak takeout.
 	\begin{itemize}
    \item 2NT = Enquiry (strong or to play in hearts opposite clubs and hearts)
 		\begin{itemize}
-      \item 3\clubs = weak with clubs
+      \item 3\clubs = weak with \clubs
       \item 3\diamonds = weak with \hearts\&\diamonds
       \item 3\hearts = weak with \hearts\&\clubs
       \item 3\spades = GF, \hearts\&\clubs
@@ -571,8 +567,14 @@ weak takeout.
 			\item 4NT = RKCB for \hearts ~\xref{sec:rkcb}
 			\end{itemize}
 		\end{itemize}
-   \item 3\clubs/\diamonds/\hearts, etc = pass or correct
-   \item 3\spades = constructive but non-forcing with 5/6 spades
+	\item 3\clubs = Pass if clubs or hearts + clubs weak, or enquiry
+		\begin{itemize}
+		\item Pass = \clubs or \hearts\&\clubs
+		\item 3\diamonds = \hearts\&\diamonds weak
+		\item 3\hearts = \hearts&\clubs GF
+		\item 3\spades = \hearts\&\diamonds GF
+		\end{itemize}
+   \item 3\diamonds/\hearts = Pass or correct
 	\end{itemize}
 
 \item 2NT:
@@ -608,17 +610,17 @@ weak takeout.
 		\item 3N (if available) = GF option
 		\item Other slam tries (if available) = GF option
 		\end{itemize}
-	\item 3x = shortage ask
+	\item step above completing transfer (eg 3\clubs-3\hearts) = shortage ask
 		\begin{itemize}
 		\item 3N = no shortage, weak option
-		\item 4 level-completion = GF option
+		\item 4 level-completion (eg 3\clubs-3\hearts-4\diamonds) = GF option
 		\item other suits = 0 or 1, weak option
 		\end{itemize}
-	\item 3N = to play
+	\item 3N = to play vs weak option
 		\begin{itemize}
 		\item slam tries = GF option
 		\end{itemize}
-	\item 4\clubs/\diamonds = General Swiss~\xref{sec:swiss}
+	\item 4\clubs/\diamonds = General Swiss for weak option~\xref{sec:swiss}
 	\end{itemize}
 
 \item 3\spades:
