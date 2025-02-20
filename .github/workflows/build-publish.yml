@@ -28,9 +28,9 @@ jobs:
 #            openinglist.pdf
 #            prepareddefences.pdf
 
-      - name: Convert README.md to index.html
-        run: |
-          pandoc README.md -o index.html
+#      - name: Convert README.md to index.html
+#        run: |
+#          pandoc README.md -o index.html
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v3
@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: |
-            index.html
+            README.md
             level4.pdf
             level5.pdf
 
