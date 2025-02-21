@@ -42,6 +42,7 @@
 12. & Lebensohl & \pageref{note:12} \\
 13. & Responses to 1\clubs & \pageref{note:13} \\
 14. & Responses to 1\diamonds& \pageref{note:14} \\
+15. & Wriggle from 9-15 1N-(x) & \pageref{note:15} \\
 18. & Responses to 2x & \pageref{note:18} \\
 19. & General Swiss & \pageref{note:19} \\
 20. & Suction wriggle & \pageref{note:20} \\
@@ -401,20 +402,6 @@ detailed in the section ``Continuations after 1NT" \xref{sec:resp:1n}.
 In the case of the third- or fourth-seat non-vulnerable 1NT the responses are
 weak takeout and should be announced "natural, non-forcing" \orange{4E5}.
 
-\subsubsection{Artificial 1NT}
-\label{sec:resp:1nart}
-
-\item 1NT if artificial:
-	\begin{itemize}
-   \item 2\clubs/\diamonds: weak, to play.
-   \item 2\hearts/\spades: preference, to play.
-   \item 2NT: forcing enquiry:
-		\begin{itemize}
-      \item 3\clubs/\diamonds weak, 3\hearts/\spades strong. 3\clubs/\hearts better \hearts, 3\diamonds/\spades better \spades.
-		\end{itemize}
-   \item 3\clubs/\diamonds: strong, good suit.
-   \item 3\hearts/\spades: natural slam try.
-	\end{itemize}
 
 \newpage
 
@@ -874,6 +861,10 @@ penalties.
 After a protective double of 1NT we play Aardvark with a Halmic redouble where
 bids show a two suiter (that suit and a higher) and redouble forces 2\clubs and shows a weak single-suiter.
 
+\label{note:15}
+
+After a 9-15 1NT is doubled in direct seat then it's as with the protective double, but pass is optional, for opener to pass with 13-15 and XX or bid a suit with 9-12.
+
 \subsubsection{After direct overcalls of 1NT}
 \label{sec:resp:lebensohl}
 \label{note:12}
@@ -958,24 +949,6 @@ superaccept that still allows the use of Swiss.
 
 \newpage
 
-\section{Encrypted bidding}
-\label{sec:encryption}
-
-Note: currently this is inactive, since we have dropped key agreement from the system.
-
-Once responder makes an encrypted raise, opener can either accept or decline
-the key.  To decline, simply rebid the suit (cheaply with a minimum; jump if
-maximum.  Use common sense.).
-
-If the key is accepted, subsequent bids are two-way, depending on the key.
-
-Opener's rebid shows a useful side-suit if holding the trump
-K (0--1 losers) or a potential weakness if holding the trump A (2--3 losers).
-Responder can then either place the contract, cue-bid (either showing with the
-K or denying with the A), or use Blackwood.
-
-Blackwood here is Roman Keycard, but it's modified because there are only three keycards
-still of interest.
 
 \section{Slam conventions}
 \label{sec:slam}
@@ -1616,23 +1589,6 @@ Responses:
 	 
 \end{itemize}
 
-\subsection{Interference after an artificial 1NT}
-\label{sec:intf:1N}
-
-\begin{itemize}
-\item 1NT-(X):
-	\begin{itemize}
-	\item Pass = weak, no preference
-	\item XX = enquiry
-	\item 2x = to play
-	\end{itemize}
-\item 1NT-(bids)
-	\begin{itemize}
-	\item X = penalties
-	\item cue = forcing enquiry
-	\end{itemize}
-\end{itemize}
-
 
 \subsection{Interference over a 2-level opening}
 \label{sec:intf:2level}
@@ -1709,61 +1665,20 @@ After the initial lead we lead high from bad suits and low from good suits.
 \label{sec:card:signals}
 
 Signals are reverse (low encourages) attitude on partner's lead of the A, Q or
-pip cards and standard count (high even) on K or J leads and on declarer's
-lead.
+even pip cards and standard count (high even) on K or J leads or odd pip cards
+and on declarer's lead.
 
 Carding will frequently be false on declarer's lead.
 
-Leads to ruffs and other obvious situations may be McKenny.
+Leads to ruffs and other obvious situations may be lead directing Lavinthal-style.
 
 \subsection{Discards}
 \label{sec:card:discards}
 
-Discards are a modified Italian style whereby prime (2357JK) discards are
-encouraging and composite discards (4689TQA) are suit-preference
-Lavinthal-style. Thus, low composite cards ask for the lower of the outside
-suits and high even cards ask for the higher of the two outside suits.
-
-\newpage
-\subsection{Prism}
-\label{sec:card:prism}
-
-NOTE: currently we're not using Prism signals since the gain is marginal for the 
-extra thought load and we don't play often enough to keep up with them.
-
-Prism is a signalling system based on the shape of the whole hand. An initial
-hand of 13 cards will, perforce, have either one suit which is odd (and three
-even) or one suit which is even (and three odd). This denotes the parity of the
-hand.
-
-The first card in a prism sequence will give the original parity of the hand.
-Low for odd, high for even. Second and subsequent cards will indicate the suit
-which is unique in parity. Take the spade suit 2 3 6, the following sequences indicate
-the following parities and suits:
-
-\begin{tabular}{llll}
-\bf order & \bf parity & \bf outside suit & \bf relative to spades \\
-\hline
-2 3 6 & odd    & higher       & hearts \\
-2 6 3 & odd    & middle       & diamonds \\
-3 6 2 & odd    & lower        & clubs \\
-3 2 6 & even   & higher       & hearts \\
-6 2 3 & even   & middle       & diamonds \\
-6 3 2 & even   & lower        & clubs \\
-\end{tabular}
-
-This information can be combined with the other defender's hand and dummy to
-deduce the shape of declarer's hand as follows. Add together the length of your
-suits and dummy's, then subtract each from 13. This will give you either four
-even numbers, four odd numbers or two of each.
-
-\begin{itemize}
-\item If all four are even then declarer's unique suit is the same as partners and the same parity.
-\item If all four are odd then declarer's unique suit is the same as partners and the other parity.
-\item If partner's suit is in the even pair, then declarer's suit is the other one in that pair and the other parity.
-\item If partner's suit is in the odd pair, then declarer's suit is the other one in that pair and the same parity.
-\end{itemize}
-
+Discards are a modified Italian style whereby Fibonacci (A2358K) discards are
+encouraging and other discards (4679TJQ) are suit-preference
+Lavinthal-style. Thus, low non-Fibonacci cards ask for the lower of the outside
+suits and high non-Fibonacci cards ask for the higher of the two outside suits.
 \newpage
 
 \section{Conventions for lower-level events}
@@ -1835,239 +1750,6 @@ The strong diamond opening must include GF single suiters. After opening
 
 Three level bids must be natural, not transfers, so all the three level suit
 openings are natural and weak. 3NT is gambling.
-
-\newpage
-
-\section{Conventions not legal at EBU events}
-\label{sec:illegal}
-
-We have some extensions / alternatives which we play when allowed, but are {\bf
-not legal} in EBU tournaments. STES overcalls are brown sticker according to
-WBF rules and encrypted signals are not permitted at any level.
-
-\subsection{STES overcalls}
-\label{sec:stes}
-
-STES overcalls are based on the suction construction used throughout this
-system.  The acronym stands for Suction Transfer Exclusion Suction and
-represents the meanings of each available suit, going up stepwise, so, the suit
-above is suction, the next suit is a transfer, the suit below shows the other
-two and the cue is suction.
-
-\begin{itemize}
-\item 1\clubs:
-	\begin{itemize}
-	\item 1\diamonds = hearts or spades and diamonds
-	\item 1\hearts = spades
-	\item 1\spades = diamonds and hearts
-	\item 2\clubs = diamonds or hearts and spades
-	\end{itemize}
-\item 1\diamonds:
-	\begin{itemize}
-	\item 1\hearts = spades or clubs and hearts
-	\item 1\spades = clubs
-	\item 2\clubs = hearts and spades
-	\item 2\diamonds = hearts or spades and clubs
-	\end{itemize}
-\item 1\hearts:
-	\begin{itemize}
-	\item 1\spades = clubs or diamonds and spades
-	\item 2\clubs = diamonds
-	\item 2\diamonds = spades and diamonds
-	\item 2\hearts = spades or clubs and diamonds
-	\end{itemize}
-
-\newpage
-
-\item 1\spades:
-	\begin{itemize}
-	\item 2\clubs = diamonds or hearts and clubs
-	\item 2\diamonds = hearts
-	\item 2\hearts = clubs and diamonds
-	\item 2\spades = clubs or diamonds and hearts
-	\end{itemize}
-\end{itemize}
-
-When permitted, we play a simple STES overcall as a standard overcall range,
-with double for three suits or a big hand. Jump overcalls are also STES, weak
-if single suited or strong if two suited and 2NT is any weak two suiter.
-
-\subsection{Encrypted carding}
-\label{sec:carding:encrypted}
-
-Section~\ref{sec:encryption} describes bidding systems where one side
-establish a key and can use that to pass information concealed from the
-opposition. It would be nice if this key was available to encode information
-during the defence, but this is unfortunately not permitted by the WBF or any
-regional authority. 
-
-There are a number of things which can be used as a key and a number of signals
-to which the key can be applied. Each key will be a binary key with a default state
-and an alternate state. Each signal will have a default mode and an alternate mode.
-
-\subsubsection{Keys}
-\label{sec:carding:encrypted:keys}
-
-Keys are listed in preference order - use the highest key which is valid. If
-there is no valid key then the default options apply.
-
-\begin{enumerate}
-
-\item Explicit key---If a key has been agreed during the
-auction~x\ref{sec:encryption} then use this. The Ace is the default key and the
-King is the alternate key.
-
-\item Declarer shown out---If declarer has shown out in a suit then defenders
-use parity in that suit as a key. Odd parity is the default key, even is the
-alternate.
-
-\item Declarer specified length---If during the auction declarer has shown a
-precise number of cards in a suit then defenders use parity in that suit as a
-key. Odd parity is the default key, even is the alternate.
-
-\end{enumerate}
-
-\subsubsection{Signals}
-\label{sec:carding:encrypted:signals}
-
-Each signal applies in a specific situation and has a default and alternate
-mode. Use the default mode if there is no key or the default key applies to
-you, use the alternate mode if the alternate key applies to you. Note that this
-means that one member of the partnership will be signalling one way and the
-other will be signalling the other way.
-
-\begin{itemize}
-
-\item Encrypted count---Signal standard count as the default option and reverse as the
-alternate. If the key is parity in another suit then signal with reverse count
-the sum of two suits.
-
-\item Encrypted attitude---Signal reverse attitude as the default option and standard as
-the alternate.
-
-\item Encrypted McKenny---The default option is normal McKenny (low card shows lower
-outside suit), the alternate option a low card shows the higher outside suit. Encrypted
-revolving discards apply similarly
-
-\item Sicilian---The default option is Italian, so odd cards are encouraging,
-even cards are McKenny, the alternate option is even cards encouraging, odd
-McKenny 
-
-\end{itemize}
-
-When permitted we play Sicilian discards, encrypted count signals except on the
-lead of an Ace or Queen, when we play encrypted attitude.
-
-\newpage
-
-\section{A brief history}
-\label{sec:history}
-
-{\bf NB: the system has changed sufficiently that this history is out-of-date.  Do
-not rely on it to describe our bidding! }
-
-We wanted to play a system making use of encrypted bidding.  Our first attempt
-used a fairly standard Acol structure, with a weak NT and three weak 2s.  It
-was soon apparent that crypto raises in these circumstances (requiring 11+,
-4-card support and either A or K but not both) never come up, at least to a
-first approximation.
-
-We also quite liked the idea of light and limited openings.  This was from a
-couple of experiments with a (highly illegal) forcing pass system, where a pass
-in first or second seat showed any 12+, with 0--11 HCP hands forced to open
-somehow.  In particular, 2-suited bids at the 1-level have a lot of
-attractions.
-
-Our next attempt was to consider the idea of a 12+ 1\clubs opener, with all other
-openings 8--11.  This is fine in theory, but EBU regulations say that this 1\clubs
-opener cannot have a 5+ card major suit without a longer minor.  This meant
-that we needed an opening-values 2\clubs bid, and generally lost the point of the
-system.  We fell back upon a strong club structure.
-
-Given the strong \clubs structure, we then looked at our other opening
-bids.  Our 2-level openers are pre-emptive, and show either single-suiters or
-two-suiters.  This is based upon the Suction convention: 2\clubs shows
-\diamonds or both majors, 2\diamonds shows \hearts or
-\spades\&\clubs, 2\hearts shows \spades or
-\clubs\&\diamonds, and 2\spades shows \hearts and a minor.
-We don't have a way to show a \spades\&\diamonds two-suiter; this is
-a likely future use for 2NT.
-
-Major suit openings are played as takeout bids.  This means that 1\spades
-promises 5+ H and 0--3 \spades, with 1\hearts promising 5+
-\spades and 0--3 \hearts.  These were, at one stage, 4-card openings
-in the other major, but we found that this made bidding in competition too
-difficult.  In uncontested auctions, this has the great advantage that you gain
-a ``free" cue-bid: after a 1\spades opening, 2\spades shows a good
-raise of \hearts while 2\hearts, 3\hearts etc. are pre-emptive.
-
-The next implication is that we need a way to show hands with 4+ in both
-majors.  This falls to 1NT; we have
-2\clubs/2\diamonds/2\hearts/2\spades as weak bids ``to
-play", and 2NT as a strong enquiry.  Bids in the major suits are primarily
-pre-emptive; 2NT asks for range and better major.  3m is strong and one-round
-forcing.
-
-1\clubs includes balanced hands 16--19 and 23+ (we're using 2NT as a
-20--22 balanced hand, for now).  The 1\diamonds opening, therefore, has to
-cover all opening hands that do not fall into one of the above categories.  It
-therefore includes:
-
-\begin{itemize}
-\item 12--15 balanced.
-\item Unbalanced hands, 8--15, with no 5-card major and at most one 4-card
-      major.
-\end{itemize}
-
-Responses to 1\diamonds are selected to allow the 1NT rebid, showing a
-weak NT opener, on all auctions.  Therefore: 1\hearts = 0--7,
-1\spades = 8+.  After interference, pass is weak; any other action
-promises 8+.
-
-So that's our one-level openings.  For two-level openers, we wanted them to be
-the two-suited bids we'd originally considered for our one-level openings.  I
-can't remember if it was Matt or me who first found out about Suction as a
-defence to 1NT, or who suggested it as a structure for 2-level openings, but
-the fact remains that we like it.  Essentially, each 2-level bid shows either a
-weak 2 in the suit above OR the other two suits.  Of course, this leaves the
-non-touching pairs uncovered, and leaves you with two ways to show a pre-empt
-in clubs.  We soon thought of playing 2\spades as showing \hearts and
-a minor (as opposed to the original \clubs or
-		\hearts\&\diamonds).  This still left
-\spades\&\diamonds uncovered, but we decided to cope.
-
-At this stage, our 2NT opening was fairly standard: 20--22 balanced or
-semi-balanced.  After a few sessions playing, we modified this to include the
-spade-diamond two-suiters.  Of course, that makes the bid forcing, so we
-changed the NT ranges such that this included our game-forcing NT hands: any
-23+.  Responses are suit preference, on the assumption that the weak hand is
-more frequent, with transfer preference being used if responder has a strong
-hand.  If opener has the strong option, he can rebid 3NT.
-
-The next change (there's still more!) was to include GF two-suiters in our
-2-level openings.  This narrows the specification of the 1\clubs opening, and is
-easy to specify: opener can rebid his opened suit (whichever it is) over any
-response.  In the 2NT case, this opening now shows GF (semi-)balanced, GF with
-S\&\diamonds, or weak with \spades\&\diamonds.  In the two-suited case, any rebid other than 3NT shows
-the strong hand, and any transfer break does also.
-
-Finally, our responses to 1\clubs: initially, these were natural, promising a 4-card
-suit and 8+ (with any weak hands going via 1\diamonds).  Boring!  We then tried
-encrypted responses: 1\hearts promised HA or HK, not both; 1\spades showed neither or both
-in \hearts, and exactly one in \spades, and so on.  1NT was a positive with no potential
-key; 1\diamonds was the negative.  Opener would rebid NT if balanced, 2\hearts to deny a
-potential key, and anything else to show a potential place to play if holding
-the key K or denying if holding the key A.  We ditched this structure not
-because it doesn't work but because it frequently (read nearly always) ends up
-at the 3-level before either hand has actually mentioned a suit, which could
-still be only 4 cards.
-
-We now play a far more elegant structure, similar to our responses to 1\diamonds: 1\diamonds is
-negative (0--7), 1\hearts is positive distributional (8+), and 1\spades is positive balanced
-(8+, again).
-
-As for the system name: suction is measured in Pascals, and the system is
-encrypted.  It went from there.
 
 \newevenside
 
